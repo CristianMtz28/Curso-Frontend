@@ -1,0 +1,55 @@
+<!--Este es un repaso de HTML iniciando los sueños desde 0 y haciendolos de forma correcta y directa, sin desviarnos y con un objetivo en mente que es SER PROGRAMADOR.
+No tomes esto como "Una perdida de tiempo" ya que siempre es bueno recordar algunos tips y trucos; así podremos ser mejores y sobretodo hacer lo que nos gusta.-->
+
+<!--Todos los archivos HTML tienen que tener la terminación .html ya que ese formato es el que lee el navegador; HTML significa (HyperText Market Lenguage) y tal cuál no es un lenguaje de programación sino como su nombre lo dice un Lenguaje de Marcado de Etiquetas; con las etiquetas estructuraremos la página web.
+En HTML se dividen por elementos, cómo excabezados, botones, imagenes, etc. Cada objeto que vemos en un sitio web es un elemento y HTML nos permite agregar elementos a nuestra página para que el navegador pueda interpretarlo.
+Sin embargo lo que vienen siendo los espacios, los colores, sombras, tipos de letra, etc. Los editaremos con CSS que es un lenguaje que permite volver al HTML "más bonito" y es el que le da estilo propio a cada página.
+
+Cada etiqueta abre y cierra con la siguiente estructura:
+
+        <etiqueta> </etiqueta>
+
+
+Esto significa que lo que haya dentro de esa etiqueta será leído por el navegador.
+
+En cada eqtiqueta vamos a tener atributos y cada atributo va a tener un valor; Los atributos nos permiten modificar el comportamiento o aspecto de la etiqueta; y como decíamos dentro va a estar el contenido:
+
+        <etiqueta atributo="valor">Conetnido</etiqueta>
+
+Incluso si nosotros ponemos la etiqueta de ejemplo ya lo puede abrir el navegador web (Esto por la terminación .html) y esto aunque no lo parezca ya es una página web MAL HECHA pero una página web al fin y a cabo-->
+
+<!--Ahora hablaremos de la estructura básica HTML; para eso usaremos la etiqueta <html></html> para indicarle dónde abre y donde cierra nuestro código html.
+Todo sitio web, tiene:
+Cabecera <head></head>: Dentro de esta etiqueta va información directa para los navegadores y también puede haber información para los buscadores, por ejemplo google, lo que va dentro de esta etiqueta no se va a imprimir dentro del navegador; aquí pueden ir Keyword para búsqueda de Google, CDN para librerías y enlaces a otros archivos dentro del sitio web como el CSS.
+
+Cuerpo <body></body>:  Dentro de Body ya pondríamos todo el contenido de nuestro sitio web.
+
+Ejemplo básico:
+-->
+<!-- 
+<html>
+        <head>
+                <title>Hola Mundo | Curso Frontend: HTML</title> -->
+                <!--Con la etiqueta title cambiamos el título de la página, la que aparece hasta arriba en el navegador a un lado del Favicon-->
+        <!-- </head>
+        <body>
+                Hola Mundo
+        </body>
+</html> -->
+
+<!--Aunque esta estructura ya esta bien, aún falta para tenerla completa; veamos la estructura completa:-->
+
+<!DOCTYPE html> <!--Esto indica que el tipo de archivo es html-->
+<html lang="es"> <!--Nos indica el lenguaje en el que esta el sitio we, ya sea español, inglés, etc. Dependiendo del lenguaje en el que hayas hecho la página web, si lo hiciste en español pones "es" si es en inglés pones "en"-->
+<head><!--Son los parámetros que le pasamos a navegadores y buscadores-->
+        <meta charset="UTF-8"> <!--Nos permite añadir símbolos y estructuras del lenguaje de nuestro idioma, en este caso español latino, como acentos, dieresis, virguillas, etc-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Nos ayuda a que nuestro sitio se adapte un poco a dispositivos móviles, sin embargo no hace un impacto visual hasta moverlo con CSS-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>01-Hola Mundo | Curso Frontend: Html5</title><!--Es el título de nuestra página como habíamos visto previamente-->
+</head>
+<body>
+        <h1>¡Hola Mundo!</h1> <!--Los encabezados son los títulos de la página son 6 de h1 a h6 donde h1 es el más grande y el h6 el más pequeño, son para títulos-->
+</body>
+</html>
+
+<!--TIP: SIEMPRE, SIEMPRE, ¡SIEMPRE! TENER ACOMODADO NUESTRO CÓDIGO, USAR NOMBRES DE CLASES EN INGLÉS Y CONTENIDO EN ESPAÑOL-->
