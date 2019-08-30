@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,34 @@
     <title>04-Etiquetas de Texto | Curso Frontend: Html5</title>
 </head>
 <body>
-    <!--Prueba de Git en la oficina-->
+    <!--Las etiquetas de Texto las podemos reconocer cómo cuando usamos Word y agregamos negritas, cursivas, subrayado, o todas al mismo tiempo, en HTML tenemos varias etiquetas de texto que sirven para resaltar el texto dentro de nuestra página web-->
+    <h2>Sin importancia semántica</h2>
+    <p>
+        <b>Soy una oración en Negritas con la etiqueta "b"</b><br><!--La etiqueta B; viene de "Bold" y pone la letra en negritas-->
+        <i>Soy una oración en Cursiva con la etiqueta "i"</i><br><!--La etiqueta I; viene de "Italic" y pone la letra en cursivas-->
+        <u>Soy una Oración Subrayada con la etiqueta "u"</u><br><!--La etiqueta U; viene de "Underline" y pone la letra subrayada-->
+
+        <!--Tenemos otras etiquetas que ayudan para la semántica; la semántica ayuda en la búsqueda de los navegadores a encontrar el contenido que esta dentro de nuestro sitio-->
+    </p>
+
+    <h2>Con importancia semántica</h2> 
+    <p>
+        <strong>Soy una oración en Negritas con la etiqueta "strong"</strong><br>
+        <!--La diferencia entre strong y bold es que bold no tiene importancia semántica dentro de nuestro sitio web; es decir, que esta en negritas sólo para resaltar el texto, sin embargo con strong no sólo resaltamos en texto sino que gracias a su importancia semántica también toma relevancia para los navegadores-->
+        <em>Soy una oración en Cursiva con la etiqueta "em"</em><!--Al igual que strong, la contraparte semántica de i es em-->
+    </p>   
+
+    <h3>Otras etiquetas sin importancia semántica y con menos uso</h3>
+    <p>
+        <small>Soy un texto pequeño con la etiqueta "small"</small><br><!--Nos permíte usar la letra más pequeña que la predeterminada por el navegador-->
+        <mark>Soy un texto marcado con la etiqueta "mark"</mark><br><!--Nos permite subrayar un texto cómo si tuvierámos un marcatextos-->
+        <del>Soy un texto "borrado" con la etiqueta "del"</del><br><!--Nos pemíte simular que un texto fue borrado ya que se muestra tachado y reemplazado por otro-->
+        <ins>Soy un texto nuevo en el sitio con la etiqueta "ins"</ins><br><!--Esta etiqueta subraya el texto y le hace saber al usuario que es contenido nuevo dentro del sitio. Nadie usa estás etiquetas jiji; además que no hay comparación visual entre está etiqueta y la u.... quizá la importancia semántica pero es suposición mía-->
+        <sub>subscript</sub><br><!--Nos permíte añadir texto pequeño debajo del texto-->
+        <sup>superscript</sup><br><!--Nos permíte añadir texto pequeño encima del texto-->
+        <!--Estás dos últimas se pueden usar como las potencias matemáticas; ejemplo:-->
+        Ejemplo de una potencia con la etiqueta "sup":
+        X <sup>2</sup>
+    </p>
 </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05-Enlaces</title>
+</head>
+<body>
+    <!--La etiqueta a nos permíte añadir enlaces en nuestra página para que nos lleve a otra sección de nuestro sitio web o bien, para que nos lleve a otro sitio fuera de nuestro sitio web. También puede realizar otras acciones cómo realizar llamadas.
+    Los enlaces no sólo sirven para texto; también pueden servir para imágenes y algunos otros elementos.
+    La estructura del enlace es el siguiente
+    
+        <a href=""></a>
+    
+    Dónde la etiqueta "a" es la etiqueta del enlace y el atributo href="" es con el que indicamos a dónde nos va a llevar nuestro enlace o en su defecto que acción va a realizar; dentro del atributo va a ir el valor que es el destino dónde dirigirá el enlace.
+    Las URL dentro del href que dirigan a otro sitio web forzosamente tienen que llevar el protocolo de la página ya sea http o https dependiendo el sitio a dónde querramos ir.
+    -->
+
+    <a href="https://www.google.com.mx">Dar click aquí para ir a Google</a><br><br>
+
+    <!--Si queremos que el navegador nos abra una nueva pestaña para no sobre poner el sitio del enlace sobre nuestro sitio entonces tenemos que añadir el atributo "target" con el valor "_blank" si nosotros no ponemos este atributo con este valor; el enlace siempre se abrirá dentro de la misma pestaña -->
+
+    <a href="https://www.google.com.mx" target="_blank">Ir a Google en una nueva pestaña</a><br><br>
+
+    <!--Dentro de la etiqueta a puedes poner otras etoqietas como headers o imagenes.-->
+
+    <!--Los enlaces también nos permíten acceder a otros documentos dentro de nuestra carpeta; o sea llevarnos a otras páginas dentro de nuestro sitio, por ejemplo, todos los archivos hecho de html del curso los tengo en una misma carpeta; entonces yo desde este archivo puedo ir a la página del "Hola Mundo" que fue el primero con un enlace de la siguiente forma:-->
+
+    <a href="01-hola-mundo.html">Llévame al "Hola Mundo"</a>
+
+    <!--Dentro del href pondríamos el nombre del archivo siempre y cuando este al mismo nivel de la carpeta: esto quiere decir que los enlaces internos se dividen por carpetas; la primera es la carpeta raíz dónde esta todo en este caso llamada 01-html después "entramos" a la carpeta y esto lo podemos ver con el slash / que significa que accederemos al archivo que esta dentro de la carpeta raíz, o sea a la ubicación del archivo y ponemos el nombre del archivo que en este caso sería 01-hola-mundo.html-->
+</body>
+</html>
