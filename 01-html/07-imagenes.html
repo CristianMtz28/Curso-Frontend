@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07-Imágenes | Curso Frontend: Html5</title>
+</head>
+<body>
+    <!--Las imagenes es algo que estará presente en todo sitio web; las imagenes se representan con la etiqueta img esta etiqueta sólo abre, no hay etiqueta de cierre pero su estructura sí tiene el slash de cierre por lo que la etiqueta sería así:      <img />. Dentro de la etiqueta de imagen debemos ponerle el atributo src (source) que es la ruta de la imagen; o sea dónde esta ubicada la imagen dentro de los archivos de nuestro sitio web.
+    Para obtener la ruta de nuestra imagen debemos revisar la estructura del documento; es decir en dónde esta alojada la imagen; en este caso tenemos la carpeta "recursos-curso" que es donde almacenaremos todos los recursos como imagenes, vídeos, etc que usaremos en el curso; la etiqueta quedaría d ela siguiente forma: -->
+
+        <!-- <img src="recursos-curso/clase-imagenes.jpg" /> -->
+
+    <!--Dónde usamos el atributo src y el valor es la ruta de la imagen, tenemos el archivo "07-imagenes.html" que en este caso fungiría la función de ser el index y de ahí nos vamos a la carpeta donde queremos tomar la imgen y con el / indicamos que accedemos a la carpeta y después seleccionamos el nombre de la imagen con la extensión de la imagen ya sea .jpg o .png-->
+
+    <!--También dentro de la etiqueta img podemos modificar el tamaño de la imagen; se recomienda solo cambiar el "width" o sea el ancho de la imagen ya que el "height" (el alto de la imagen) será proporcional al ancho de la misma; o sea si ponemos 200px de ancho automáticamente tendremos 200px de alto -->
+
+        <!-- <img src="recursos-curso/clase-imagenes.jpg" width="200px;"/> -->
+
+    <!--NOTA: Para acceder a un directorio o carpeta "atrás" para un archivo o imagen usamos los ../ eb el src; ejemplo:          <img src="../htdocs/imagen.png" /> Así saldríamos de la carpeta en la que estamos para ir a una carpeta más arriba-->
+
+    <!--También tenemos los atributos alt y title: dónde alt será un texto en caso de no lograr cargar correctamente la imagen y funciona a manera de "Placeholder" en el que entra en lugar de la imagen; la etiqueta title nos sirve para indicarle un título a la imagen y al momento de pasar el mouse sobre la imagen nos aparecerá ese título-->
+
+    <a href="https://google.com" target="_blank">
+        <img src="recursos-curso/clase-imagenes.jpg" width="200px;"/ alt="Imagen de Batman" title="Ir a Google en otra pestaña">
+    </a><br>
+    <p>Esta es una imagen mal cargada pero con el atributo <strong>alt</strong> podemos indicar que va ahí originalmente:</p><br>
+    <img src="recursos-curso/clase-imageness.jpg" width="200px;"/ alt="Imagen de Batman" title="Batman">
+
+    <!--Por último también podemos encerrar una imagen dentro de un enlace; así cuando elusuario haga click dentro de la imagen lo envíe a otra sección del sitio o a otra página de internet. NOTA: ENCERRAREMOS LA IMAGEN DE BATMAN DE ARRIBA EN UN ENLACE PARA NO ESCRIBIR MÁS CÓDIGO Y LOS ESCRITOS NO SEAN TAN EXTENSOS-->
+
+    
+
+</body>
+</html>
