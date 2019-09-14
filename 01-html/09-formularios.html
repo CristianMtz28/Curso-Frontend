@@ -17,9 +17,40 @@
     
         <!--Dentro de un formulario podemos poner varios elementos como lo son los inputs, los checkbox, textarea, botones, radio buttons, etc. Vamos agregar un input para ver el ejemplo de manera más clara-->
     
-        <input type="text"> 
+        <input type="text" placeholder="Placeholder/Nombre" maxlength="10" name="nombre" required> <br>
+        <input type="text" readonly="Readonly" placeholder="Readonly"  maxlength="10" name="nombre" required> <br>
+        <input type="text" disabled="Disabled" placeholder="Disabled"  maxlength="10" name="nombre" required> <br>
         <!--El input de tipo text indicamos que el usuario puede colocar texto dentro del input; también podemos añadir otros valores y atributos que nos ayudarán en el funcionamiento del formulario.
-            Value: con el atributo value podemos "nombrar" el atributo y el texto que pongamos será refeljado en el input, algo así como un placeholder pero -->
+            Value: con el atributo value podemos "nombrar" el atributo y el texto que pongamos será refeljado en el input, algo así como un placeholder pero sí son carácteres que se pueden editar
+            Placeholder: Es un atributo que nos indica con que información podemos llenar el input, esta en una tonalidad gris y al momento de dar click en el input desaparece para poder escribir.
+            Maxlenght: Nos permíte definir cuántos caracteres podemos escribir dentro de la etiqueta ya sea en un input o en un textarea; por ejemplo twitter dejaba 160 caracteres.
+            Size: Es el tamaño del input en caracteres; si yo defino el size en 50 obtendrá una medida apróximada en el cual sólo podría introducir 50 caracteres. Esto no se recomienda usar ya que con CSS le daremos estilo a todo el formulario.
+            Required: Co este atributo indicamos que el campo es obligatorio; así el usuario no puede iniciar sesión, mandar un mensaje o un correo si no ha llenado ese campo con anterioridad.
+            name: Este atributo es uno de los más importantes ya que el archivo que se encarga de recibir la información del formulario ya sea para un inicio de sesión o para enviar un correo se guía por el name de la etiqueta, por lo que, no importa si nuestro value, placeholder o el texto dentro del input es el correcto mientras que el atributo name es el que va a tomar como referencia.
+            readonly: Es parecido a placeholder, sólo que como su nombre lo indica sólo nos dejará leer el contenido del input más no editarlo.
+            disabled: Es parecido a readonly pero este no nos dejará ni siquiera seleccionar el campo, se mostrará gris como si estubiera deshabilitado-->
+        <input type="email" name="correo" placeholder="Correo" required><br>
+            <!--Con el input tipo "email" podemos recabar correos electrónicos, el navegador se encargará de validar si tiene un @ seguido de un dominio ya sea .com o .com.mx u otro. Así podemos fiarnos un poco más de que lo que el usuario esta introduciendo es un correo real-->
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea><br>
+            <!--El textarea es parecido a un input, sólo que es de mayor tamaño y nos permíte poder expresar de manera más clara una idea; por ejemplo un textarea se puede ver cuando publicas un estado en facebook, donde el tamaño es más grande que el de un comentario; los atributos cols y rows no se usan; ya que es preferible cambiar el tamaño y el estilo con CSS-->
+        <label for="pais">Selecciona un País: </label>
+        <select name="pais" id="pais">
+            <option value="mexico">México</option>
+            <option value="españa">España</option>
+            <option value="canada">Canadá</option>
+        </select><br>
+            <!--La etiqueta Label es aquella que nos puede indicar que poner dentro del input o la etiqueta del formulario; esta etiqueta tiene el atributo "for" que se vincula con el atributo "id" de lo que podría ser un input, un textarea, un select o cualquier elemento del formulario; el atributo for nos permite seleccionar el texto y nos indicará a que elemento se refiere.
+            La etiqueta select nos permíte crear un dropdown de opciones para poder seleccionar una opción de la que le ofrezcamos al usuario; por ejemplo escoger una nacionalidad, un platillo de comida, un número, etc. tiene la etiqueta id para hacer referencia al su label y el name que es el valor del formulario para identificaro en el archivo que reciba los datos.
+            Dentro del select pondremos las opciones que el usuario puede escoger (option) y el value es el identificador para el archivo que recibe los datos; y es el que se envia con el name del select-->
+        <label for="genero">Selecciona tu género: 
+            <input type="radio" name="genero" value="hombre" id="hombre"><label for="hombre">Hombre</label>
+            <input type="radio" name="genero" value="mujer" id="mujer"><label for="mujer">Mujer</label>
+        </label><br>
+            <!--También tenemos el input de tipo radio que nos pemíte seleccionar con un circulito una situación u otra, por ejemplo si eres hombre o mujer; al igual que los demás debe llevar su name, aunque aquí debe ser el mismo en todas las opciones ya que el navegador interpretará que debes escoger una u otra, no más de una, en este ejemplo eres hombre o eres mujer, no puedes ser las 2; el value es el valor del radio button, el id es el identificador para el label ya que se recomienda usar el label delante del radio button para que podamos escoger el texto y que se seleccione el radio button y el usuario no tenga que estar dandole al mero circulito-->
+        <label for="terminos">
+            <input type="checkbox" name="terminos" id="terminos" required><label for="terminos">Acepto los términos y condiciones</label>
+        </label><br><br>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>

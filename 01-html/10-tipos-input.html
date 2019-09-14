@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10-Tipos de Input | Curso Frontend: Html5</title>
+</head>
+<body>
+    <!--En esta sección veremos otros tipos de input para complemetar la clase de los formularios; con estos elementos podemos completar de mejor manera -->
+    <form action="" method="GET">
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña"><br>
+        <!--No hace falta explicar mucho; es el de contraseña y "censura" los caracteres con bolitas para que no se pueda ver lo que el usuario esta escribiendo-->
+        <input type="color" name="color" id="color"><br>
+        <!--Nos sirve para que el usuario seleccione un color por medio del código hexadécimal. (No le veo utilidad alguna)-->
+        <label for="numero">Selecciona un número del 1 al 10: 
+            <input type="number" name="numero" id="numero" placeholder="1 al 10" min="1" max="10">
+            <!--Con el type number nos permíte introducir número; también con los atributos min y max podemos establecer el número mínimo y máximo a escoger-->
+        </label><br>
+
+        <label for="rango">Selecciona el salario quincenal que tienes: 
+            4000<input type="range" name="rango" id="rango" min="4000" max="8000">8000
+        </label><br>
+        <!--El input de tipo range es similar al input de tipo number sólo que aquí tenemos una barra para establecer con Rango, no he visto como usar mejor este input pero supongo con Javascript más adelante se le puede sacar mejor provecho-->
+        <input type="tel" name="telefono" id="telefono" maxlength="10" placeholder="Teléfono"><br>
+        <!--Con el input de tipo tel podemos recibir un número teléfonico el atributo maxlenght nos puede ayudar a limitar los 10 digitos de la marcación, la diferencia entre este y el number es que no hay barrita para subir el número es como un tipo texto pero haciendo enfásis y reconociendo que es un número telefonico -->
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
