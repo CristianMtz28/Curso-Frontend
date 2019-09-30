@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>20-Etiqueta script & noscript | Curso Frontend: Html5</title>
+</head>
+<body>
+    <!--La etiqueta script y noscript nos permíte agregar código Javascript dentro de nuestro sitio web-->
+
+    <script>
+        var name = "Cristian";
+        document.write("Hola mi nombre es " + name + "<br>");
+
+        var number1 = 2;
+        var number2 = 7;
+
+        var sum = number1 + number2;
+
+        document.write("La suma de los dos número y variables es: " + sum);
+    </script>
+
+    <!--La etiqueta script la puedes poner dentro de body o dentro de head. RECUERDA QUE LA MANERA CORRECTA DE AGREGAR CÓDIGO JAVASCRIPT A NUESTRO SITIO WEB ES POR MEDIO DE UN SRC:
+    
+        <script type="text/javascript" src="URL DE NUESTRO DOCUMENTO JAVASCRIPT"></script>
+    -->
+
+    <!--Esta etiqueta nos sirve ´para ejecutar código Javascript dentr de un navegador que tenga desactivado Javascript.... PERO ESTAMOS A FINALES DE 2019 ¿QUIÉN CHINGADOS TENDRÍA DESACTIVADO JAVASCRIPT? JAJAJA-->
+    <noscript>
+        alert("Activa Javascript HDTPM");
+    </noscript>
+
+    
+</body>
+</html>
