@@ -1,0 +1,76 @@
+/*SELECTORES AVANZADOS*/
+
+/*SELECCIONAR UN ELEMENTO ESPECÍFICO DE FORMA HIJO
+
+Si nosotros ponemos:
+
+div p {
+    font-size: 20px;
+}
+
+Cómo ya habíamos visto en el ejercicio pasado al selector no le va importar si hay más elementos entre el div y el párrafo, en el ejemplo pasado teníamos:
+
+<div>
+    <article>
+        <p></p>
+    </article>
+</div>
+
+y también
+
+<div>
+    <p></p>
+</div>
+
+Sin embargo al aplicar el código:
+
+div p {
+    font-size: 20px;
+}
+
+Se movían los 2; ahora si nosotros queremos ser aún más especificos y modificar sólo los párrafos que estén directamente dentro de un div y que no tengan ningún otro elementos de por medio podemos usar el símbolo de "mayor qué" >   ejemplo:
+
+*/
+
+div > p {
+    font-size: 20px;
+}
+
+
+/*SELECTOR DE ATRIBUTOS
+
+Nos permite seleccionar por los atributos; por ejemplo:
+
+Si tuvieramos un input con el type="text" no nos importaría su valor que en este caso es text o podría ser email o password... NO con sólo tener el atributo podemos seleccionarlo; ejemplo */
+
+input[type]{
+    color: blue;
+}
+
+/*Aquí tenemos dos inputo con diferente valor pero mismo atributo y los 2 fueron modificados: 
+<div>
+    <input type="text" name="" id="">
+    <input type="email" name="" id="">
+</div>
+
+
+Aunque también puedes ser aún, sí, aún más específico y también seleccionar tanto el tipo como el valor; ejemplo:
+
+
+*/
+
+input[type="text"]{
+    color: red;
+}
+
+/*HERENCIA.
+Para este ejemplo usaremos a:
+
+body{
+    color: green;
+}
+
+Cómo ejemplo ya que si ese código no estuviera comentado todos los elementos tenrían el color verde ya que Body es "el padre que hereda" sus atributos, valores y propiedades a todos los elementos dentro de el
+
+*/
+

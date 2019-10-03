@@ -1,0 +1,103 @@
+/*SELECTORES*/
+
+/*SELECTOR UNIVERSAL: Se representa con un asterisco y significa "todo" o sea todos los elementos del sitio web*/
+
+* {
+    
+}
+
+/*SELECTORES DE ETIQUETA: Los selectores de etiqueta son los que llevan por nombre la etiqueta html y se relacionen con ellos directamente; por ejemplo un h1, un párrafo <p>, un enlace <a href="">, un articulo <article> etc.  y accedemos a ellos directamente de la siguiente forma: */
+
+p {
+    color: #000;
+}
+
+a {
+    color:rebeccapurple;
+}
+
+/*Si nosotros quisieramos añadir más elementos podemos hacer la siguiente maniobra:*/
+
+h1, h2, h3 {  /*Así con las comas podemos decirle al estilo que esos elementos html comparirán los mismos estilos*/
+    color: red;
+}
+
+/*Sin embargo por semántica y reglas de CSS si yo vuelvo a escribir un elemento tomará el segundo ya que es "el más reciente" e interpretará que es más importante; ejemplo:*/
+
+h2 {
+    color: yellowgreen;
+}
+
+/*SELECTOR DECENDENTE: Y lo que nos permíte es seleccionar diferentes elementos que estén dentro de otro. Por ejemplo tenemos en el código html lo siguiente:
+
+1.- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga nulla, odit fugit deleniti labore vitae ducimus aspernatur earum repudiandae necessitatibus nisi provident a laborum veritatis repellat magni dicta facere fugiat.</p>
+
+2.- <div>
+        <p>Soy un párrafo <a href="#">dentro</a> de un div</p>
+    </div>
+
+3.- <div>
+        <article>
+            <p>Soy un párrafo dentro de un div y un article</p>
+        </article>
+    </div>
+
+Cómo podemos ver son 3 párrafos pero en diferentes situaciones, uno esta solo, otro esta dentro de un div y el otro dentro de un div y un article.
+
+Supongamos que queremos hacer el tipo de letra más grande de todos los párrafos que estén dentro de un div; ojo sólo los que estén dentro de un div, o sea que el primero de nuestra estructura HTML quedaría totalmente descartado; si nosotros hacemos esto:
+
+p {
+    font-size: 20px;
+}
+
+Me movería todos los párrafos de mi sitio web ya que sólo estoy haciendo referencia a los párrafos; para ser más específicos podemos hacer lo siguiente:
+*/
+
+div p {  /*NOTA AL MOMENTO DE DEFINIR EL CSS TENEMOS QUE TENER EN CUENTA QUE SI DEJAMOS ASÍ EL CÓDIGO TAMBIÉN SELECCIONARÍA EL PÁRRAFO QUE ESTA DENTRO DEL DIV Y EL ARTICLE YA QUE EL ESTILO CSS SÓLO SE ENCARGARÁ DE BUSCAR PÁRRAFOS DENTRO DE UN DIV SIN IMPORTAR CUÁLES Y CUÁNTAS ETIQUETAS HAYA DE POR MEDIO*/
+    font-size: 20px;
+}
+
+/*Y con eso moveríamos sólo los párrafos que estén dentro de un div; si quisieramos cambiar el color del párrafo que est dentro de un div y un article haríamos lo siguiente:*/
+
+div article p {
+    color: turquoise;
+}
+
+div p a {
+    color: orange;
+}
+
+/*EDITANDO CSS MEDIANTE LA CALSE (CLASS="") Para poder editar varios elementos de manera un poco más específica podemos acceder a ellos por medio de la clase que nosotros le asignemos; por ejemplo podemos tener varios enlaces dentro de un div:
+
+<div>
+    <a class ="grande"href="#">Soy un enlace</a>
+    <a class ="grande"href="#">Soy un enlace</a>
+    <a href="#">Soy un enlace</a>
+</div>
+
+si yo hiciera esto:
+
+div a {
+    color: red;
+}
+
+Me movería los 3 elementos por igual sin embargo podemos acceder a ellos por medio de la clase; en los 2 primeros enlaces tenemos la clase "grande" y en el último no, usando el código anterior moveríamos los 4 sin embargo aunque este dentro de un div podemos seleccionar sólo los elementos con la clase grande para eso usamos un punto, para acceder a la clase:
+*/
+
+
+.grande {
+    color:yellow;
+}
+
+/*Algo muy similar pasa con los id, ya que en el elemento podemos también nombrar un id="" pero en CSS en vez de acceder con el punto accederíamos con el # hashtag, ejemplo:
+
+#grande{
+    color:purple;
+}
+*/
+
+/*DIFERENCIA ENTRE ID Y CLASE: En CSS no es recomendable usar el id por varias razones una es que la clase la puedes repetir y reciclar el estilo para diferentes elementos; como en el ejemplo anterior que usamos 2 veces la clase grande para 2 enlaces; con ID sólo podemos hacer uso de él una vez, por lo que no podríamos reciclarlo; además que el ID de un elemento puede servirnos para frameworks de Javascript como Vue, Angular o React (Creo yo) jiji*/
+
+#rojo {
+    color: red;
+}

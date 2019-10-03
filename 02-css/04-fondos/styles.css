@@ -1,0 +1,10 @@
+/*FONDOS*/
+
+/*Para agregar un background o fondo debemos hacerlo dentro de la etiqueta body ya que se aplicará a todo el sitio web; aunque también podemos aplicar fondos a un div aunque es rara su aplicación sí se puede hacer por ejemplo para un efecto parallax; aunque normalmente se utilizan los fondos a toda la página aunque siendo sincero ¿Quién utiliza hoy en día una imagen de fondo? a menos que sea algo muy específico */
+
+body{
+    /* background-color: #000; Fondo de color */
+    background-image: url("/02-css/04-fondos/img/bg.jpg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+}

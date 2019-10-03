@@ -1,0 +1,17 @@
+/*Para empezar a usar el lenguaje de CSS tenemos que tener en cuenta varios elementos como los selectores y el llamado de etiquetas; por ejemplo un elemento global para todos los estilos es el uso de "body" esto se debe ya que en html la etiqueta <body></body> encierra todo el cuerpo de nuestro sitio web por lo que los valores que se le asignen a body aplicaría para todos los elementos dentro de la etiqueta <body></body> este es un selector padre por así llamarlo; ejemplo:*/
+
+body{
+    color: #0d86c9;
+}
+
+/*En el ejemplo anterior podemos ver cómo estamos definiendo el color del texto de todo lo que se encuentre dentro de <body></body> entonces no importa que letra o texto yo ponga será color "aqua" ya que estamos definiendo así el body; después con otros elementos podemos definir de manera más precisa estilos para cada elemento
+
+Estructura CSS:
+
+body{                       Selector (body{}) : Con el seleccionamos que elemento del código HTMl vamos aplicar los estilos
+    color: #0d86c9;         Propiedad (color:): No va a indicar que estilo le queremos dar al elemento; en este caso color es para cambiar el color de texto
+                            Valor (#0d86c9;): Es el valor asignado a la propiedad para poder aplicar el efecto del estilo en este caso el código de color #0d86c9 da una tonalidad azul
+}
+
+*/
+
