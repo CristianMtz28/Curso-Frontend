@@ -1,0 +1,8 @@
+/*Para empezar a usar el lenguaje de CSS tenemos que tener en cuenta varios elementos como los selectores y el llamado de etiquetas; por ejemplo un elemento global para todos los estilos es el uso de "body" esto se debe ya que en html la etiqueta <body></body> encierra todo el cuerpo de nuestro sitio web por lo que los valores que se le asignen a body aplicaría para todos los elementos dentro de la etiqueta <body></body> este es un selector padre por así llamarlo; ejemplo:*/
+
+body{
+    color: aqua;
+}
+
+
+
