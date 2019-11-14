@@ -1,0 +1,38 @@
+/*Unidades de Medida*/
+
+/*Así como nosotros tenemos en la vida real los metros, centímetros, milímetros, etc, aquí en el diseño web también hay diferentes medidas; los pixeles son la unidad de medida que más se usa, aunque también hay otros como los porcentajes y la em y rem.
+
+Unidades Relativas
+    px- Pixel
+    em- Relativa al tamaño de fuente que tenga su elemento padre o el más cercano
+    rem- Relativa al tamaño de fuente específicado en el body
+    %- Porcentaje
+
+Unidades Absolutas
+    Estas medidas nunca las va a usar en el diseño web, pero para que las conozcas:
+    in- inches (pulgadas)
+    cm- centímetros
+    mm- milímetros
+*/
+
+body{
+    font-size: 20px;;
+}
+
+p{
+    /* font-size: 28px;
+    Los píxeles son una unidad de medida que tenemos relativa.*/
+
+    /* font-size: 2em; */
+    /*Por defecto el navegador web nos pone un tamaño de letra standar (14 o 16px) esto lo toma en caso de que nosotros no lo hayamos especificado en el body, si nosotros vamos al body y ponemos un font-size de 20px; el navegador ya sabe de antemano que los estilos css le están indicando que el font-size es diferente al tamaño predeterminado.
+    1 em equivale al tamaño que tenga su contenedor padre o el más cercano; por ejemplo, en nuestro html tenemos 
+    <body>
+        <p> Por lo que el contenedor padre del p es el body
+        Si tuvieramos un div entre el body y el p el em tomaría el font-size que le especifíque el div y no el body ya que el div es el contenedor padre del p y es más cercano a la etiqueta:
+    <body>
+        <div>
+            <p>Aquí tomaría el tamaño del div gracias al em*/
+
+    font-size: 3rem;
+    /*Aquí a diferencia del em no importa que contenedor este más cerca del elemento siempre por regla va a tomar el tamaño del body*/
+}

@@ -1,0 +1,43 @@
+/*ENLACES*/
+
+/*
+Con CSS podemos cambiar absolutamente lo que queramos de los enlaces, el tamaño del enlace, la tipografía, el color, etc y además podemos utilizar otras pseudoclases.
+Para darle estilo a los enlaces podemos acceder a ellos mediante la etiqueta:
+
+a{
+    Esto cambiaría todos los enlaces del sitio web; serían los enlaces generales de la página
+}
+*/
+
+a{
+    font-size: 21px; /*Tamaño de la letra del enlace*/
+    text-decoration: none; /*Quitar el subrayado del enlace*/
+}
+
+/*También tenemos las pseudoclases; que las pseudclases nos permiten darle estilos dependiendo de cual sea el estado de nuestro elemento; por ejemplo con el hover; Muchas veces hemos visto que pasas el mpuse encima de una enlace y este cambia, bueno esta es la pseudoclase hover*/
+
+a:hover {
+    font-size: 28px;
+    color: red;
+    background: black;
+}
+
+/*Pseudoclase active: Esta pseudoclase es muy interesante ya que es el estado que va a tener nuestro elemento cuando demos un click; o también podría ser cuando tengamos un menú y estemos dentro de esa página ya que sería un enlace activo*/
+
+a:active{
+    font-size: 58px;
+    color: blue;
+    background: gold;
+    text-decoration: underline;
+}
+
+/*Esta pseudoclase :link es para páginas que nunca hemos visitado pero casi no se usa; además una vez que entres ya se perdería el estilo
+a:link{
+
+}
+
+a:visited {
+    Este es para los enlaces que ya visitase
+}
+
+*/

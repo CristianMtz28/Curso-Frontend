@@ -2,10 +2,29 @@
 
 /*Para agregar un background o fondo debemos hacerlo dentro de la etiqueta body ya que se aplicará a todo el sitio web; aunque también podemos aplicar fondos a un div aunque es rara su aplicación sí se puede hacer por ejemplo para un efecto parallax; aunque normalmente se utilizan los fondos a toda la página aunque siendo sincero ¿Quién utiliza hoy en día una imagen de fondo? a menos que sea algo muy específico */
 
+/* *{
+    
+    padding: 0;
+    margin: 0;
+} */
+
 body{
     /* background-color: #000; Fondo de color */
+    background-color: black;
     background-image: url("/02-css/04-fondos/img/bg.jpg");
-    background-size: 500px;
+    /* background-size: 500px; Con este valor delimita el tamaño de la imagen de fondo primero se aplica el ancho y el alto se ajusta automáticamente dependiendo del tamaño de la imagen*/ 
+    background-size: cover; /*El mejor es cover para abarcar el ancho completo y */
     background-repeat: no-repeat;
     color: aliceblue;
+    background-attachment: fixed; /*Esta propiedad sirve para dejar fijo nuestro fondo ya que ortiginalmente si la imagen de fondo es pequeña tiene el valor scroll que hace que la imagen de fondo se mueva*/
+    background-position: center; /*Con esta propiedad podemos hacer que nuestro fondo se pocisione donde queramos, ya sea en el centro a la izquierda, derecha, etc.*/
+    /*LA MAYORÍA DE LAS PROPIEDADES SIRVEN CON UNA IMAGEN DE FONDO*/
+}
+
+.background{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    padding: 0;
+    margin: 0;
 }

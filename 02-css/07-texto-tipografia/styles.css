@@ -1,0 +1,24 @@
+/*Enlaces y Tipografía*/
+
+/*En este apartado veremos todads las propiedades y cosas que podemos hacer con el texto, para poder cambiar tamaños, colores, tipos de fuente, etc. */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: monospace; /*Tipo de letra*/
+    font-size: 20px; /*Tamaño de la fuente*/
+    font-style: italic; /*Estilo de la fuente como italic, normal, oblique, unset, etc*/
+    font-weight: normal; /*Es lo que determina a los h1..2..3..4 que sea negritas*/
+    color: teal; /*Cambiar el color de la tipografía*/
+    text-align: center; /*Es la alineación de la fuente, por defecto viene en left, pero puedes ponerlo justificado, centrado, etc*/
+    text-decoration: underline; /*Es la decoración que puede llegar a tener el texto*/
+    text-transform: capitalize; /*Con esta propiedad podemos cambiar todo el texto a mayúsculas, mínisuculas o primera letra en mayúsculas*/
+}
+
+p{
+    text-align: justify; /*Texto justificado*/
+    letter-spacing: 0.2px; /*Es el tamaño que hay entre cada letra*/
+    line-height: 28px; /*Es el espacio que abarca entre cada línes de texto, de manera vertical*/
+}
