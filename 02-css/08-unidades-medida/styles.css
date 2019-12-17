@@ -16,7 +16,7 @@ Unidades Absolutas
 */
 
 body{
-    font-size: 20px;;
+    font-size: 20px;
 }
 
 p{
@@ -33,6 +33,6 @@ p{
         <div>
             <p>Aquí tomaría el tamaño del div gracias al em*/
 
-    font-size: 3rem;
+    font-size: 2rem;
     /*Aquí a diferencia del em no importa que contenedor este más cerca del elemento siempre por regla va a tomar el tamaño del body*/
 }

@@ -1,0 +1,37 @@
+/*
+El modelo de caja es practicamente como podemos tratar nuestros elementos para darle diferentes medidas como alto, ancho y márgenes.
+
+NOTA MÁS IMPORTANTE: AL TRABAJAR CON CAJAS NORMALMENTE NO SE LE PONE EL HEIGHT (ALTO) LA MAYORÍA DE LAS VECES VA A SER AUTOMÁTICO; ESTO PARA EVITAR DESBORDES DENTRO DEL SITIO 
+
+NOTA IMPORTANTE: EL NAVEGADOR POR DEFECTO TE DA UN MARGEN, MUY CHICO PERO ESE MARGEN SE DEBE ELIMINAR O ES LO MÁS RECOMENDABLE PARA PODER USAR EL 100% DEL ANCHO Y ALTO DE LA PANTALLA; HAY LIBRERÍAS CSS QUE NOS AYUDAN PERO DE MANERA RÁPIDA SE USA EL SELECTOR UNIVERSAL * Y SE LE ESPECIFICA MARGIN 0 Y PADDING 0
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.caja{
+    width: 200px;
+    height: auto;
+    background-color: #0354ab;
+
+    margin: 20px; /*
+    El margin es el espacio que hay entre los elementos; ahora sí que el espacio fuera del elemento no dentro; el de dentro es padding.
+    Recuerda que para el margin se pone sólo un valor cuando queremos que sea 20px a cada uno de los lados o sea, arriba, derecha,abajo e izquierda o puedes específicar: 20px, 10px, 50px, 40px esto sería 20 arriba, 10 a la derecha, 50 hacía abajo y 40 hacía la izquierda o también en su defecto el de 2 que sería: 20px, 10px; que el primero sería 20 px arriba y abajo y 10 hacía la izquierda o derecha.
+    Ya por último sería: usar los: margin-top: ; margin-left: ; margin-bottom: ; y margin-right: ;*/
+
+    padding: 50px;/*
+    El padding es el espacio que hay entre el borde del elemento y el contenido por el elemento; a diferencia del margin que es hacía el exterior el padding es hacía el interior. Su usa igual que el margin por 4, por 2 y por su nombre específico o sea:
+    padding: 20px;
+    padding: 20px, 10px;
+    padding; 20px, 10px, 50px, 40px;
+    padding-top: ; padding-right: ; padding-bottom: y padding-left: ;*/
+
+    border: 2px solid red;
+}
+
+
+.caja p{
+    background-color: #e9e9e9;
+    padding: 5px;
+}
