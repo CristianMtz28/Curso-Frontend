@@ -1,0 +1,38 @@
+/*
+TIPO DE ELEMENTOS
+
+Tenemos varios tipos de elemenentos algunos abarcan el 100% del ancho de la página y otros que sólo abarcan el tamaño del elemento esto se debe porque hay elementos que son de tipo bloque y otros elementos de tipo línea; LOS ELEMENTOS DE TIPO BLOQUE SON LOS QUE ABARCAN EL 100% DE LA PÁGINA, LOS ELEMENTOS DE TIPO LÍNEA ABARCAN EL TAMAÑO DEL ELEMENTO Y SE PONEN UNO A LADO DE OTRO.
+
+
+ELEMENTOS DE TIPO BLOQUE: BLOCK
+
+Encabezados: h1, h2, h3, h4, h5, h6.
+div, article, section, header, footer, aside, table, p, video, ul, ol.
+
+
+ELEMENTOS DE TIPO LÍNEA: INLINE. Los elementos de tipo lína no pueden tener las propiedades básicas de width, height y padding, ya que interrumpirían los demás elementos como los divs, articles, h1, p, etc, o sea los elementos de tipo bloque.
+
+enlaces a, span, img, b, i, small, cite, code, em, strong, br, script, button, input, label, select, textarea
+
+*/
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, p, div {
+    background: #ccc;
+    
+}
+
+a {
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+
+    /*CON DISPLAY PODEMOS "CONVERTIR" EL ELEMENTO INLINE EN BLOQUE O BUENO, NO CONVERTIRLO PERO PODEMOS DARLE ASPECTO DE TIPO BLOCK COMO EL HEIGHT, WIDTH Y PADDING, ESO SÍ, AÚN SE PONEN A LADO DEL OTRO PORQUE SIGUEN SIENDO INLINE, POR ESO "INLINE-BLOCK" SU LOS QUISIERAMOS TRANSFORMAR TOTALMENTE A ELEMENTOS BLOQUE EN DISPLAY: BLOCK; PONRÍAMOS BLOCK Y NO SÓLO INLINE-BLOCK*/
+
+
+    /*DISPLAY FLEX ES UNA FORMA NUEVA DE MOVER LAS CAJAS PERO SE VERÁ EN LA SECCIÓN DE FLEXBOX*/
+}

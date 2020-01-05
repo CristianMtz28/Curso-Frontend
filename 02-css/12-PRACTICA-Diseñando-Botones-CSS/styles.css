@@ -1,0 +1,44 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #32021f;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.small {
+    padding: 10px 15px;
+}
+
+.medium {
+    background-color: blue;
+}
+
+.large {
+    background-color: green;
+    padding: 20px 25px;
+}
+
+.xl {
+    background-color: orangered;
+    padding: 25px 30px;
+}
+
+.round {
+    border-radius: 100px;
+}
