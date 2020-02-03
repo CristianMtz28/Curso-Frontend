@@ -1,0 +1,50 @@
+/*Los Pseudo elementos nos permíten seleccionar ciertas partes de algunos elementos; por ejemplo la primer línea de nuestros párrafos; pero no sólo eso, también podemos seleccionar la primer letra de nuestro elemento.
+
+NOTA: A DIFERENCIA DE LAS PSEUDOCLASES LOS PSEUDOELEMENTOS SE LLAMAN CON DOS PUNTOS O SEA EN VEZ DE p:hover CON LOS PSEUDOELEMENTOS SERÍN p::first-letter
+
+*/
+
+/*FIRSTE LETTER: Nos permíte seleccionar la primer letra*/
+p::first-letter{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/*FIRST-LINE: Nos permíte seleccionar la primer linea de nuestro párrafo*/
+p::first-line{
+    background-color: #cf5c36;
+    line-height: 40px;
+}
+
+/*SELECTION SIRVE PARA QUE AL MOMENTO DE SELECCIONAR TEXTO EN NUESTRO SITIO SE SUBRAYE DIFERENTE Y NO AZUL COMO VIENE POR DEFECTO*/
+*::selection{
+    background-color: crimson;
+    color: #fff;
+}
+
+.caja{
+    background-color: #f9a83f;
+    width: 150px;
+    height: 150px;
+}
+
+/*BEFORE NOS PERMITE AGREGAR UN ELEMENTO DESPUÉS DE NUESTRA CAJA*/
+.caja::before{
+    content: 'Antes de la caja';
+    display: block;
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+.caja::after{
+    content: ''; /*TANTO EN AFTER CMO BEFORE SE DEBE PONER A FUERZAS CONTENT:'' AUNQUE LO DEJES VACIO.*/
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    position: relative;
+    left: 200px;
+    color: #fff;
+}
+
+/*NOTA IMPORTANTE: PARA LA CAJA CREAMOS UNA CAJA PEQUEÑA NEGRA DE LA NADA, SIN USAR HTML, PARA ESO NOS PUEDE SERVIR, DE HECHO SE USA PARA COSAS MÁS COMPLEJAS PERO ES RARO, SIN EMBARGO PUEDE SER DE MUCHA UTILIDAD*/

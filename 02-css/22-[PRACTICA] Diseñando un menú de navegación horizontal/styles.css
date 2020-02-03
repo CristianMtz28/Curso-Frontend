@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e8e8;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    background-color: #092327;
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #ef8354;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+/*PARA ESTE MENÚ Y EN GENERAL LO QUE DEBEMOS FIJARNOS ES COMO ACCEDER A NUESTROS ELEMENTOS YA QUE DEBEMOS DARLE ESTILOS A CADA UNO PARA LOGRAR NUESTRO OBJETIVO, PODEMOS VERLO COMO DE ADENTRO HACÍA AFUERA Y ASÍ ACCEDER A CADA UNO DE ELLOS; SABES LEER EL CÓDIGO PERO FALTA SABERLO ESCRIBIR*/

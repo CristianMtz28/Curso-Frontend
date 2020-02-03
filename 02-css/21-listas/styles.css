@@ -1,0 +1,54 @@
+/* ul, ol { */
+    /* list-style: none; NONE Nos sirve para quitar los puntos de la lista desordenada y los números de la lista ordenada */
+    /* padding: 0; Con el padding 0 "reseteamos" el espacio que ocupaban los puntos y los números de las listas */
+/* } */
+
+
+ul{
+    /* list-style: square;  */
+    /*Por defecto los puntos negros de las listas se llaman disc, pero hay otras propiedades; ejemplo:
+                                circle: Hace cirulos
+                                square: Cuadrados*/
+    
+    list-style-image: url(img/checked.png);
+    /*Con style-image podemos usar una imagen para ponerla, siguiendo la ruta; en este caso se descargó una imagen de Flaticon pero en sí podríamos usar cualquier imagen*/
+}
+
+ol{
+    list-style: upper-latin;
+
+    /*Valores números
+    decimal 1,2,3,4,5...
+    decimal-leading-zero 01, 02,03, 04, 05....
+    lower-roman  i, ii, ii, iv, v....
+    upper-roman  I, II, III, IV, V....
+    lower-latin  a, b, c, d, e...
+    upper-latin  A, B, C, D, E...
+    */
+}
+
+
+/*MENÚ*/
+.menu{
+    background-color: #123c7c;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li{
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.menu li a{
+    display: block;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    background-color: #0faaa2 ;
+    border: 0.5px solid #fff;
+}

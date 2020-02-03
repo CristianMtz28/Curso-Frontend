@@ -1,0 +1,53 @@
+/*Son estados que pueden tener nuestros elementos en diferentes situaciones (más específicos los enlaces). Las pseudoclases son cuando pasas el mouse por encima de un elemento; por ejemplo un
+hover*/
+
+a{
+    background-color: #4357ad;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*HOVER nos permíte editar los estilos del elemento una vez que el usuario pasa el mouse sobre el elemento*/
+a:hover{
+    background-color: blue;
+    padding: 25px 35px;
+    border: 1px #fff solid;
+    text-decoration: underline;
+}
+
+
+/*ACTIVE: Nos permíte seleccionar los elementos que están activos; o sea cuando el usuario da click */
+a:active{
+    background-color: #000;
+}
+
+/*VISITED: Son para los enlaces que ya fueron visitados*/
+
+a:visited{
+    /* background-color: #ccc; */
+}
+
+div{
+    width: 500px;
+}
+
+div p:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+div p::first-line{
+    background-color: #ccc;
+    color: #000;
+}
+
+div p:nth-child(2){
+    background-color: #009ddc;
+    color: #fff;
+    padding: 12px;
+}
