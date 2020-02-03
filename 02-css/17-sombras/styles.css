@@ -1,0 +1,18 @@
+.text{
+    text-shadow: 2px 3px 10px #000;
+}
+
+/*
+El primer valor sirve para modificar la posición horizontal de la sombra
+El segundo valor sirve para modificar la posición vertical
+El tercer valor sivre para modificar el tamaño de la sombra, entre menor sea el valor más solida va a ser la sombra
+Se le puede dar cualquier color a la sombra
+*/
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: #f79256;
+    box-shadow: 2px 3px 10px #000;
+
+}
