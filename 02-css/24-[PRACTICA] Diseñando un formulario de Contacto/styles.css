@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Se recomienda quitarles margenes y paddings ya que los formularios por defecto agregan mucho espacio*/
+
+/*NOTA: box-sizing: border-box; Nos sirve para al poner un elemento, por ejemplo, a un div le ponemos un width de 200px y un padding de 20px, se sumarían y quedarían 220 px para que cada vez que utilices paddings o bordes en cualquier elemento, se respete el width y el height que le has asignado anteriormente a dicho elemento. */
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario {
+    background-color: white;
+    width: 500px;
+    margin: 20px auto;  /*Para centrar el formulario ponemo auto después de el margen que queremos tener y así logramos centrar nuestro elemento*/
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulario input{
+    display: block;
+}
+
+/*Con los [] podemos poner el tipo de input que vamos a editar y así todos elementos con ese tipo de input serán modificados*/
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #226fc1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    min-height: 120px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/*Con min y max height y width podemos limitar la altura del text area y con el 100% en los dos valores evitamos que se desborde a los lados y así tener controlado el elemento con css*/
+
+.formulario input[type="submit"]{
+    width: 200px;
+    margin: 0px auto;
+    background: none;
+    border: 1px solid #4fb560;
+    color: #4fb560;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #4fb560;
+    color: #fff;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus {
+    border: 2px solid #4fb560;
+    outline: 0px; /*Por defecto se pone un border azul cuando seleccionas un elemento pero con esta propiedad podemos quitarla y dejar nuestro estilo como queremos*/
+}

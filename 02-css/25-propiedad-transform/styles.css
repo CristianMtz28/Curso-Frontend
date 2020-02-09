@@ -1,0 +1,43 @@
+/*PROPIEDAD TRANSFORM
+
+Es una propiedad relativamente nueva que viene con CSS3 y nos permíte hacer cosas que antes no se podía con CSS, básicamente nos permite transformar nuestros elementos de nuestra página web, como escalarlos, rotarlos y más; por ejemplo:
+
+-Trasladar Elementos
+-Escalar Elementos
+-Rotar Elementos
+-Sesgar Elementos
+
+La propiedad transform y sus valores NO NOS SIRVEN PARA POSICIONAR ELEMENTOS, para eso tenemos el position: relative, absolute y fixed.
+
+Esta propiedad nos sirve más para hacer animaciones
+
+*/
+
+.caja {
+    background-color: #ffaa5a;
+    width: 200px;
+    height: 200px;
+    /*TRANSLATE*/
+    /* transform: translate(200px, 50px);  */
+    /*Con la propiedad transforr y el valor translate podemos trasladar el elemento, para esta propiedad de translate ponemos 2 valores el primero es de izquierda a derecha y el segundo de arriba a abajo
+    También tenemos translateX y translate Y
+
+    transform: translateX: (200px) nos permíte movernos en el eje de la X o sea de izquiera a derecha.
+    translateY: (200px) Nos permíte movernos en el eje de la ye de arriba a abajo
+    
+    */
+
+    /*ESCALAR*/
+    /* transform: scale(1.5,1.5); */
+    /*Esta función nos permíte escalar el elemento, o sea hacerlo a escala más grande o más chico, por ejemplo si ponemos 1,1 no pasa nada porque es el elemento 1 de su valor definido original en ambos casos, ya que el primer valor es para el ancho y el segundo para el alto*/
+
+    /*ROTAR*/
+    /* transform: rotate(50deg); */
+    /*Nos permíte rotar los elementos con la palabra deg (que son los grados)*/
+
+    /*SESGAR*/
+    transform: skew(20deg, 0deg);
+    /*Nos ayuda a sesgar (inclinar) los elementos también mediante los grados que le ponemos al elemento*/
+
+
+}

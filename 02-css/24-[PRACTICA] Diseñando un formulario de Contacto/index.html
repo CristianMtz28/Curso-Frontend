@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-[PRACTICA] Diseñando un formulario de Contacto| Curso Frontend: CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="formulario" action="recibe.js" method="GET">
+        <input type="text" name="name" id="name" placeholder="Nombre" class="input" required>
+        <input type="email" name="email" id="email" placeholder="Correo" class="input" required>
+        <textarea name="message" id="message" placeholder="Mensaje" class="textaera" required></textarea>
+        <input type="submit" value="Enviar" class="button">
+    </form>
+</body>
+</html>
+
+<!--Recuerda que un formulario va dentro de la etiqueta form; sin embargo debemos definirle una clase ya que podemos tener varios formularios dentro de nuestro sitio con diferentes estilos-->
