@@ -19,7 +19,7 @@ Esta propiedad nos sirve más para hacer animaciones
     height: 200px;
     /*TRANSLATE*/
     /* transform: translate(200px, 50px);  */
-    /*Con la propiedad transforr y el valor translate podemos trasladar el elemento, para esta propiedad de translate ponemos 2 valores el primero es de izquierda a derecha y el segundo de arriba a abajo
+    /*Con la propiedad transform y el valor translate podemos trasladar el elemento, para esta propiedad de translate ponemos 2 valores el primero es de izquierda a derecha y el segundo de arriba a abajo
     También tenemos translateX y translate Y
 
     transform: translateX: (200px) nos permíte movernos en el eje de la X o sea de izquiera a derecha.

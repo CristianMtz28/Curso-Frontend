@@ -1,0 +1,44 @@
+/*ANIMACIONES
+Las animaciones son nuevos estpandares de css con los que podemos animar (valga la redundancia) elementos html y poder tener una página web más interactiva; se usan por medio de los keyframes; los keyframes son puntos en los que va haber un cambio, en este caso en nuestra animación
+*/
+
+@keyframes colores {
+    /* from{background-color: #9eb3c2;}
+    to{background-color: #21295C ;} */
+    0%{background-color: #9eb3c2;}
+    25%{background-color: #1C7293;}
+    50%{background-color: #065A82;}
+    75%{background-color: #1B3B6F;}
+    100%{background-color: #21295C;}
+}
+
+@keyframes loading {
+    0%{background-color: red;}
+    10%{background-color: red; width: 150px;}
+    25%{background-color: red; width: 250px;}
+    50%{background-color: orange; width: 500px;}
+    75%{background-color: yellow; width: 750px;}
+    90%{background-color: greenyellow; width: 950px;}
+    100%{background-color: green; width: 1000px;}
+
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: #9eb3c2;
+    animation-name: colores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.loading {
+    margin-top: 200px;
+    width: 5px;
+    height: 10px;
+    background-color: red;
+    animation-name: loading;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}

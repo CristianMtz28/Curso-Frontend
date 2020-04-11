@@ -1,0 +1,28 @@
+/*Una transición es el cambio de una estado a otro; por ejemplo cuándo haces transiciones en Power Point*/
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: #21295c;
+    transition: all 1s ease; /*transition es la propiedad css para realizar las transiciones; all significa que va afectar a todas las propiedades del elemento; es el que normalmente se usa aunque también podemos especificarle que sólo puede ser el color o el tamaño; 1s significa el tiempo que va a tomar hacer la transición y ease lo veremos un poco más abajo*/
+    transition-delay: 0s; /*Este es el tiempo que puede tardar en empezar la transición una vez que el mouse haya pasado por el elemento y de igual manera es el tiempo que tarda en regrear a su posición original cuando el mouse se quita*/
+}
+
+
+/*
+Velocidad de curva
+    ease - inicio lento, después rápido y termina lento
+    linear - misma velocidad de inicio a fin
+    ease-in - inicio lento
+    ease-out - final lento
+    ease-in-out - inicio lento y final lento
+
+*/
+
+.caja:hover{ /*Estos son las propiedades a las que vamos a transformar el elemento y se usa con el pseuselector hover*/
+    background-color: #9eb3c2;
+    width: 400px;
+    height: 400px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
