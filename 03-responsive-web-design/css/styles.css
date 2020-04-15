@@ -1,0 +1,157 @@
+/*Práctica de Layout*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4a465b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px; /*Este es uno de los elementos más importantes ya que a pesar de poner el width con el porcentaje
+    le especifícamos al mis contenedor los pixeles máximos que puede tener, así sí seguirá respetando su porcentaje pero adaptado
+    a los pixeles que le hayamos específicados; esto más la etiqueta meta-viewport nos ayuda a que nuestro sitio sea 
+    adaptado a dispositivos moviles*/
+    margin: 20px auto;
+}
+
+header {
+    background-color: #fff;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #000;
+}
+
+header nav ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.main {
+    width: 70%;
+    background-color: #fff;
+    float: left;
+}
+
+.main .imagen {
+    width: 100%;
+}
+
+.main .imagen img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .posts {
+    padding: 40px;
+}
+
+.main .posts article h2 {
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+.main .posts article p {
+    margin-bottom: 15px;
+    line-height: 27px;
+}
+
+aside {
+    width: 30%;
+    background-color: #161f26;
+    float: left;
+    padding: 20px;
+    color: #fff;
+}
+
+aside .widget {
+    margin-bottom: 20px;
+}
+
+aside .widget .titulo {
+    color: #ff8000;
+    border-bottom: 1px solid #ff8000;
+    margin-bottom: 10px;
+}
+
+aside .widget ul {
+    list-style: none;
+}
+
+aside .widget ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+
+aside .widget ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+aside .widget ul li a:hover {
+    color: aqua;
+}
+
+aside .widget p {
+    line-height: 27px;
+}
+
+footer {
+    width: 70%;
+    background-color: black;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    clear: both;
+}
+
+/*MEDIA QUERYS
+Los mediaquery son condicionales CSS con los cuáles le indicamos al sitio web mediante CSS que al llegar el dispositivo/pantalla a una 
+cierta medida va a cambiar su estructura css; esto se usa para los tamaños de tablet, computadora y teléfonos
+*/
+
+@media screen and (max-width:800px) { /*Esto se traduce a:*/
+/*(@media screen) = Cuando estemos en una pantall (and) Y (max-width:800px) su tamaño sea de 800px para abajo*/
+    
+
+    body{  /*Ejecuta estos Estilos*/
+        background-color: #000; /*Esto significa que al llegar a una pantalla de 800px o menor el fondo va a pasar de morado a negro*/
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #424242;
+    }
+}
