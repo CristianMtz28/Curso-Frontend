@@ -1,0 +1,68 @@
+/*
+Flexbox se divide en 2 grupos de propiedades para las propiedades del elemenyo padre y propiedades de los elementos hijo
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width:80%;
+    height: 500px;
+    max-width: 700px;
+    background-color: #212d40;
+
+    display: flex;
+    /*La primer propiedad para "habilitar" flexbox es usando la propiedad display pero con el valor flex
+    Asi todos los elementos hijos del container que es el elemento padre pasan a ser "flexibles"*/
+    
+    flex-direction: row; 
+    /*Es la dirección que le vamos a dar a los elementos, por defecto si no lo ponemos viene con row
+    que row significa filas; y son en horizontal de izquierda a derecha; también esta column que como su nombre lo indica se pone en
+    columnas de manera vertical de arriba a abajo; normalmente vamos a estar cambiando entre una y otra para dispositivos móviles*/
+    
+    
+    flex-wrap:wrap;
+    /*La propiedad wrap nos permite que se sigan respetando los valores de los elementos hijos, mediante el tamaño
+    del padre, esto quiere decir que si tenemos más elementos en vez de amontonarlos en una sola fila, los pondrá debajo de manera que
+    pueda verse de la mejor manera posible*/
+    
+    
+    flex-flow: row wrap;
+    /*Este es el atajo de los 2, como primer valor se pone la dirección y como segundo se pone el wrap*/
+
+    
+    justify-content: space-between;
+    /*Nos sirve para alinear elementos; tenemos el valor center; que nos permite centrar todos los 
+    elementos; también el space-between que nos permite aliniear los elementos uniformemente de izquierda a derecha y space-around que
+    nos permite alinear nuestros elementos igual que space-between pero con un espaciado a los lados*/
+
+    align-items: baseline;
+    /*Esta propiedad nos permite alinear nuestro contenido verticalmente para posicionar nuestros elementos a lo
+    largo del elemento padre arriba en medio o abajo verticalmente. También tenemos stretch que nos funciona para poder hacer
+    nuestros elementos más altos hasta abarcar el 100% y nos respeta el padding del elemento padre.
+    Baseline nos alinea nuestros elementos al texto de los elementos*/
+
+    align-content: flex-start;
+    /*Es similar a align items pero sólo podemos utilizar una de las 2 PERO align content sirve cuando tenemos
+    más de una línea de elementos, es decir que en mismo div hijo tengamos elementos que se acomoden debajo de los otros; en cuestión
+    de las cajitas que sean 6 o 7 para que se pongan debajo de las demás*/
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+}

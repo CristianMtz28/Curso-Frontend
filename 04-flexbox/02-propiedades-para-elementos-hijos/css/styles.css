@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width:80%;
+    height: 500px;
+    max-width: 700px;
+    background-color: #212d40;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap:wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* align-items: baseline; */
+    align-content: center;
+}
+
+.caja {
+    width: 150px;
+    height: 100px;
+    background-color: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+
+
+
+    order:1;
+    /*Order, nos ayuda a ordenar nuestros elementos por importancia, donde 1 es el más importante y así sucesivamente para usar
+    2,3... etc; esto nos ayuda para darle importancia a los elementos de como queremos que se muestren en diferentes casos como lo
+    es el resposive design*/
+
+    flex-grow: 1; 
+    /*Flex Grow nos permite modificar los elementos hijos a un tamaño que abarque el 100% de nuestro sitio y por defecto viene en uno
+    este elemento nos ayuda a poder estruturar el sitio web y respeta los estilos css de las cajas (elementos) como el margin y el
+    padding
+    Si ponemos el valor 2 o 3 etc no significa que el elemento que tiene el 2 va a ser dos veces más grande que el que tiene el 1 
+    sino que si el elemento original crece un pixel, el elemento con el 2 crecerá 2 pixeles, si un elemento crece 10 px el otro crecerá
+    20px y así proporcionalmente*/
+
+    flex-shrink: 0;
+    /*Flex Shrink nos permite indicar que tan pequeño queremos que se haga un elemento; por ejemplo se define con el valor 0
+    pero se pone también el tamaño del width y a partir de ese tamaño ya no puede hacerse más pequeño y los demás elementos se
+    acomodarán al rededor de el*/
+
+    /* flex-basis:200px;
+    Es prácticamente definir el width del elemento pero se hace con flexbox
+    */
+}
+
+    
+
+.dos {
+    flex-shrink: 0;
+    flex-basis: 350px;
+}
