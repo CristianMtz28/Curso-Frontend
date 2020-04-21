@@ -1,0 +1,188 @@
+/*------- ESTILOS INICIALES -------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1638px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ------- HEADER ------- */
+
+header {
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/jezael-melgoza-KbR06h9dNQw-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 1080px;
+}
+
+header .menu-logo {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu-logo a {
+    color: #ccc;
+    font-weight: normal;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 0 20px;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+
+header .menu-logo .menu a:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+header .tarjeta-blanca {
+    background-color: #fff;
+    border-radius: 28px;
+    padding: 40px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1084px;
+    max-height: 742px;
+    margin: auto;
+    margin-bottom: 125px;
+}
+
+header .tarjeta-blanca .foto-tarjeta-blanca {
+    margin-bottom: 0px;
+}
+
+header .tarjeta-blanca .foto-tarjeta-blanca img {
+    width: 100%;
+    vertical-align: top;
+}
+
+header .info-tarjeta-blanca {
+    padding: 0px 40px;
+    vertical-align: top;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 300;
+}
+
+header h2 {
+    font-size: 2em;
+    font-weight: 250;
+    margin-bottom: 0;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 1em;
+    font-style: italic;
+}
+
+header .redes-sociales {
+    margin-top: 10%;
+}
+
+header .redes-sociales .facebook {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #1877f2;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin-right: 38px;
+}
+
+header .redes-sociales .twitter {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #1da1f2;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin-right: 38px;
+}
+
+header .redes-sociales .instagram {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #ae316b;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin-right: 38px;
+}
+
+header .redes-sociales .youtube {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin-right: 38px;
+}
+
+header .redes-sociales .github {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #2b3137;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin-right: 38px;
+}
+
+header .redes-sociales .facebook:hover {
+    background-color: #000;
+}
+
+header .redes-sociales .twitter:hover {
+    background-color: #000;
+}
+
+header .redes-sociales .instagram:hover {
+    background-color: #000;
+}
+
+header .redes-sociales .youtube:hover {
+    background-color: #000;
+}
+
+header .redes-sociales .github:hover {
+    background-color: #000;
+}
+
+

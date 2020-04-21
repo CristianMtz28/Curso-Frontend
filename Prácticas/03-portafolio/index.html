@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,46 +11,43 @@
 </head>
 <body>
 
-    <!--Menú y fondo de la Calle Madero-->
+    <!--Menú, fondo de la Calle Madero y tarjeta blanca-->
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="img/logosinfondo.png" alt="">
+            <div class="menu-logo">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logosinfondo.png" alt="Cristian Martínez"></a>
+                </div>
+                <nav class="menu">
+                    <a href="#">Inicio</a>
+                    <a href="#">Acerca de Mí</a>
+                    <a href="#">Contenido</a>
+                    <a href="#">Viajes</a>
+                    <a href="#">CV/Skills</a>
+                    <a href="#">Contacto</a>
+                </nav>
             </div>
-            <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Acerca de mí</a>
-                <a href="#">Contenido</a>
-                <a href="#">Viajes</a>
-                <a href="#">CV/Skills</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </div>
-    </header>
-
-    <!--Tarjeta blanca de presentación-->
-    <section class="main-tarjeta-blanca">
-        <section class="tarjeta-blanca">
-            <div class="container">
+            <!--Tarjeta blanca dentro del header-->
+            <div class="tarjeta-blanca">
                 <div class="foto-tarjeta-blanca">
                     <img src="img/criss.png" alt="Cristian Martínez">
                 </div>
-                <div class="texto-tarjeta-blanca">
+                <div class="info-tarjeta-blanca">
                     <h2>¡Hola! Yo soy...</h2>
-                    <h1>Cristian Martínez</h1>
-                    <p><i>"No son los momentos trágicos los que definen nuestras vidas, sino las elecciones que tomamos después."</i></p>
-                    <p class="arroba-tarjeta-blanca">@cristianmtz28</p>
-                    <div class="redes-sociales-tarejta-blanca">
-                        <a href="www.facebook.com/cristianmtz28"><i class="fa fa-facebook"></i></a>
-                        <a href="www.twitter.com/cristianmtz28"><i class="fa fa-twitter"></i></a>
-                        <a href="www.instagram.com/cristianmtz28"><i class="fa fa-instagram"></i></a>
-                        <a href="www.youtube.com/cristianmtz28"><i class="fa fa-youtube-play"></i></a>
-                        <a href="www.github.com/cristianmtz28"><i class="fa fa-github"></i></a>
+                    <h1>CRISTIAN MARTÍNEZ</h1>
+                    <p>"No son los momentos trágicos los que definen nuestras vidas, sino las elecciones que tomamos después."</p>
+                    <div class="redes-sociales">
+                        <a target="_blank" href="https://www.facebook.com/cristianmtz28"><i class="fa fa-facebook facebook"></i></a>
+                        <a target="_blank" href="https://www.twitter.com/cristianmtz28"><i class="fa fa-twitter twitter"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/cristianmtz28"><i class="fa fa-instagram instagram"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/cristianmtz28"><i class="fa fa-youtube-play youtube"></i></a>
+                        <a target="_blank" href="https://www.github.com/cristianmtz28"><i class="fa fa-github github"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-    </section>
+        </div>
+    </header>
+    
 
     <!--Sección Acerca de Mí-->
     <section class="main-acerca-de-mi">
@@ -131,5 +127,64 @@
                 </div>
         </div>
     </section>
+
+    <!--Sección de Skills/CV-->
+    <section class="main-skills">
+        <div class="container">
+            <h3 class="titulos-secciones">Contenido</h3>
+            <div class="imagen-skills">
+                <img src="img/lucas-sankey-9R-CH7PR150-unsplash.png" alt="Cristian Martínez CV">
+            </div>
+            <div class="barra-skills">
+                <h4 class="frase-skills">"No uso lentes pero me hacen ver más inteligente..."</h4>
+                <p>HTML 90%</p>
+                <div class="skill"></div>
+                <p>CSS 70%</p>
+                <div class="skill"></div>
+                <p>JavaScript 28%</p>
+                <div class="skill"></div>
+                <div class="boton-negro">VER CV</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección de Proyectos-->
+    <section class="main-proyectos">
+        <div class="container">
+            <h3 class="titulo-secciones">Proyectos</h3>
+            <p>Estos son algunos proyectos personales; te invito a que nos ayudes a crecer</p>
+            <div class="slide-proyectos">
+                <p>No tengo idea de como poner esto jajaja</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección de Contacto-->
+    <section class="main-contacto">
+        <div class="container">
+            <h3 class="titulo-secciones">¡Mándame un mensaje!</h3>
+            <p>Haz una propuesta, dime que necesitas o simplemente di ¡Hola!</p>
+            <form action="">
+                <input type="text" placeholder="Placeholder/Nombre" maxlength="10" name="nombre" required>
+                <input type="email" name="correo" placeholder="Correo" required>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" class="boton-negro" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--Sección del footer-->
+    <footer>
+        <div class="firma">
+            Sitio web creado por Digital Jet | Copyright @ 2020
+        </div>
+        <div class="redes-sociales">
+            <a target="_blank" href="https://www.facebook.com/cristianmtz28"><i class="fa fa-facebook facebook"></i></a>
+            <a target="_blank" href="https://www.twitter.com/cristianmtz28"><i class="fa fa-twitter twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/cristianmtz28"><i class="fa fa-instagram instagram"></i></a>
+            <a target="_blank" href="https://www.youtube.com/cristianmtz28"><i class="fa fa-youtube-play youtube"></i></a>
+            <a target="_blank" href="https://www.github.com/cristianmtz28"><i class="fa fa-github github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
