@@ -17,6 +17,20 @@ body {
     overflow: hidden;
 }
 
+.boton-negro {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.8em;
+    border: solid 1px #906D4A;
+    border-radius: 20px;
+    padding: 15px 12px;
+    text-decoration: none;
+}
+
+.boton-negro:hover{
+    text-decoration: underline;
+}
+
 /* ------- HEADER ------- */
 
 header {
@@ -57,7 +71,7 @@ header .menu-logo .menu a:hover {
 }
 
 header .tarjeta-blanca {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 28px;
     padding: 40px 50px 50px 50px;
     display: flex;
@@ -68,6 +82,7 @@ header .tarjeta-blanca {
     max-height: 742px;
     margin: auto;
     margin-bottom: 125px;
+    color:#fff;
 }
 
 header .tarjeta-blanca .foto-tarjeta-blanca {
@@ -165,24 +180,99 @@ header .redes-sociales .github {
     margin-right: 38px;
 }
 
+header .redes-sociales .whatsapp {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin-right: 38px;
+}
+
 header .redes-sociales .facebook:hover {
-    background-color: #000;
+    background-color: #fff;
+    color: #1877f2;
 }
 
 header .redes-sociales .twitter:hover {
-    background-color: #000;
+    background-color: #fff;
+    color: #1da1f2;
 }
 
 header .redes-sociales .instagram:hover {
-    background-color: #000;
+    background-color: #fff;
+    color: #ae316b;
 }
 
 header .redes-sociales .youtube:hover {
-    background-color: #000;
+    background-color: #fff;
+    color: #ff0000;
 }
 
 header .redes-sociales .github:hover {
-    background-color: #000;
+    background-color: #fff;
+    color: #2b3137;
 }
+
+header .redes-sociales .whatsapp:hover {
+    background-color: #fff;
+    color: #009688;
+}
+
+/* ------- ACERCA DE MÍ -------*/
+
+.main-acerca-de-mi {
+    background-color: #f2f2f2;
+    
+}
+
+.main-acerca-de-mi .container {
+    background-color: #f2f2f2;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-acerca-de-mi .container .acerca-de-mi {
+    width: 60%;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 0;
+}
+
+.espacio-blanco {
+    margin-top: 30px;
+}
+
+.main-acerca-de-mi .container .titulos-secciones {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.main-acerca-de-mi .container .acerca-de-mi-img p{
+    text-align: center;
+}
+
+.main-acerca-de-mi .container .acerca-de-mi-img img{
+    /* vertical-align: top; */
+    width: 100%;
+    border: solid 1px #ccc;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.main-acerca-de-mi .container .acerca-de-mi-img img:hover{
+    opacity: 1;
+    border: solid 1px #fff;
+}
+
+
+
+
 
 
