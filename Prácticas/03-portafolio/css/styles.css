@@ -18,9 +18,9 @@ body {
 }
 
 .boton-negro {
-    background-color: #000;
+    background-color: #2b3137;
     color: #fff;
-    font-size: 0.8em;
+    font-size: 16px;
     border: solid 1px #906D4A;
     border-radius: 20px;
     padding: 15px 12px;
@@ -29,6 +29,14 @@ body {
 
 .boton-negro:hover{
     text-decoration: underline;
+    background-color: #000;
+}
+
+.titulos-secciones{
+    font-size: 2.2em;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
 }
 
 /* ------- HEADER ------- */
@@ -71,35 +79,41 @@ header .menu-logo .menu a:hover {
 }
 
 header .tarjeta-blanca {
+    width: 100%;
+    max-width: 1084px;
+    max-height: 742px;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 28px;
-    padding: 40px 50px 50px 50px;
+    padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
-    max-width: 1084px;
-    max-height: 742px;
+    align-items: center;
     margin: auto;
     margin-bottom: 125px;
     color:#fff;
+    overflow: hidden;
 }
 
 header .tarjeta-blanca .foto-tarjeta-blanca {
-    margin-bottom: 0px;
+    flex: 1 1 auto;
+    width: 50%;
 }
 
 header .tarjeta-blanca .foto-tarjeta-blanca img {
     width: 100%;
+    height: auto;
     vertical-align: top;
 }
 
 header .info-tarjeta-blanca {
-    padding: 0px 40px;
+    flex: 1 1 auto;
+    width: 50%;
+    padding: 0px 5%;
     vertical-align: top;
 }
 
-h1{
+header h1{
     font-size: 3em;
     font-weight: 300;
 }
@@ -107,7 +121,6 @@ h1{
 header h2 {
     font-size: 2em;
     font-weight: 250;
-    margin-bottom: 0;
 }
 
 header p {
@@ -117,7 +130,10 @@ header p {
 }
 
 header .redes-sociales {
-    margin-top: 10%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 header .redes-sociales .facebook {
@@ -129,7 +145,7 @@ header .redes-sociales .facebook {
     text-align: center;
     vertical-align: top;
     padding: 10px 5px 5px 5px;
-    margin-right: 38px;
+    margin: 10px 28px 20px 0px;
 }
 
 header .redes-sociales .twitter {
@@ -141,7 +157,7 @@ header .redes-sociales .twitter {
     text-align: center;
     vertical-align: top;
     padding: 10px 5px 5px 5px;
-    margin-right: 38px;
+    margin: 10px 28px 20px 0px;
 }
 
 header .redes-sociales .instagram {
@@ -153,7 +169,7 @@ header .redes-sociales .instagram {
     text-align: center;
     vertical-align: top;
     padding: 10px 5px 5px 5px;
-    margin-right: 38px;
+    margin: 10px 28px 20px 0px;
 }
 
 header .redes-sociales .youtube {
@@ -165,7 +181,7 @@ header .redes-sociales .youtube {
     text-align: center;
     vertical-align: top;
     padding: 10px 5px 5px 5px;
-    margin-right: 38px;
+    margin: 10px 28px 20px 0px;
 }
 
 header .redes-sociales .github {
@@ -177,7 +193,7 @@ header .redes-sociales .github {
     text-align: center;
     vertical-align: top;
     padding: 10px 5px 5px 5px;
-    margin-right: 38px;
+    margin: 10px 28px 20px 0px;
 }
 
 header .redes-sociales .whatsapp {
@@ -189,7 +205,7 @@ header .redes-sociales .whatsapp {
     text-align: center;
     vertical-align: top;
     padding: 10px 5px 5px 5px;
-    margin-right: 38px;
+    margin: 10px 10px 20px 0px;
 }
 
 header .redes-sociales .facebook:hover {
@@ -226,7 +242,6 @@ header .redes-sociales .whatsapp:hover {
 
 .main-acerca-de-mi {
     background-color: #f2f2f2;
-    
 }
 
 .main-acerca-de-mi .container {
@@ -234,36 +249,36 @@ header .redes-sociales .whatsapp:hover {
     padding-top: 80px;
     padding-bottom: 80px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 80%;
 }
 
-.main-acerca-de-mi .container .acerca-de-mi {
-    width: 60%;
-    font-size: 28px;
-    font-weight: 300;
-    padding: 0;
-}
-
-.espacio-blanco {
-    margin-top: 30px;
-}
-
-.main-acerca-de-mi .container .titulos-secciones {
-    font-size: 2em;
+.main-acerca-de-mi .container .acerca-de-mi .titulos-secciones {
+    font-size: 2.2em;
     font-weight: 300;
 }
 
-.main-acerca-de-mi .container .acerca-de-mi-img p{
-    text-align: center;
+.main-acerca-de-mi .container .acerca-de-mi p {
+    width: 90%;
+    font-size: 1.5em;
+    font-weight: 300;
+    align-self: center;
+    margin-bottom: 45px;
 }
 
 .main-acerca-de-mi .container .acerca-de-mi-img img{
-    /* vertical-align: top; */
-    width: 100%;
+    vertical-align: top;
     border: solid 1px #ccc;
     opacity: 0.5;
     cursor: pointer;
+    border: none;
+}
+
+.main-acerca-de-mi .container .acerca-de-mi-img p {
+    text-align: center;
 }
 
 .main-acerca-de-mi .container .acerca-de-mi-img img:hover{
@@ -272,7 +287,103 @@ header .redes-sociales .whatsapp:hover {
 }
 
 
+/* ------- CONTENIDO DE VIDEOS ------- */
+
+.main-contenido .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-contenido .container .titulos-secciones {
+    font-size: 2.2em;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+.main-contenido .container .seccion-videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.main-contenido .container .resto-videos {
+    padding-top: 0;
+    padding-left: 5%;
+}
+
+.main-contenido .container .resto-videos img {
+    margin-bottom: 50px;
+}
+
+/* ------- SECCIÓN DE VIAJES ------- */
+
+.main-viajes  {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+}
+
+.main-viajes .titulos-secciones {
+    width: 100%;
+}
 
 
+.main-viajes .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.main-viajes .container .titulos-secciones {
+    font-size: 2.2em;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+.main-viajes .container .viajes-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-viajes .container .viajes {
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    width: 400px;
+    height: auto;
+
+}
+
+.main-viajes .container .viajes .thumb img{
+    width: 100%;
+}
+
+.main-viajes .container .viajes .texto-viaje .titulo-viaje {
+    text-align: center;
+}
+
+.main-viajes .container .viajes .texto-viaje .extracto {
+    padding: 0 5%;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.main-viajes .container .viajes .texto-viaje  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.main-viajes .container .viajes .texto-viaje .contenedor-boton-negro {
+    align-self: center;
+    padding: 5%;
+    margin-bottom: 15px;
+}
 
 
