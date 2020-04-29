@@ -251,7 +251,7 @@ header .redes-sociales .whatsapp:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: baseline;
     width: 80%;
 }
@@ -259,11 +259,16 @@ header .redes-sociales .whatsapp:hover {
 .main-acerca-de-mi .container .acerca-de-mi .titulos-secciones {
     font-size: 2.2em;
     font-weight: 300;
+    text-align: left;
+}
+
+.main-acerca-de-mi .container .acerca-de-mi {
+    width: 50%;
 }
 
 .main-acerca-de-mi .container .acerca-de-mi p {
-    width: 90%;
-    font-size: 1.5em;
+    width: 100%;
+    font-size: 1em;
     font-weight: 300;
     align-self: center;
     margin-bottom: 45px;
@@ -271,6 +276,7 @@ header .redes-sociales .whatsapp:hover {
 
 .main-acerca-de-mi .container .acerca-de-mi-img img{
     vertical-align: top;
+    width: 400px;
     border: solid 1px #ccc;
     opacity: 0.5;
     cursor: pointer;
@@ -306,30 +312,35 @@ header .redes-sociales .whatsapp:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
+.main-contenido .container .seccion-videos .video-principal {
+    width: 60%;
+}
+
+.main-contenido .container .seccion-videos .video-principal img {
+    width: 100%;
+}
+
 .main-contenido .container .resto-videos {
+    width: 40%;
     padding-top: 0;
-    padding-left: 5%;
+    padding-left: 10%;
 }
 
 .main-contenido .container .resto-videos img {
     margin-bottom: 50px;
+    width: 300px;
 }
 
 /* ------- SECCIÓN DE VIAJES ------- */
 
 .main-viajes  {
     background-color: #f2f2f2;
-    padding: 80px 0;
+    padding: 30px 0;
 }
-
-.main-viajes .titulos-secciones {
-    width: 100%;
-}
-
 
 .main-viajes .container {
     display: flex;
@@ -355,7 +366,7 @@ header .redes-sociales .whatsapp:hover {
     background-color: #fff;
     overflow: hidden;
     border: 1px solid #ccc;
-    width: 400px;
+    width: 350px;
     height: auto;
 
 }
