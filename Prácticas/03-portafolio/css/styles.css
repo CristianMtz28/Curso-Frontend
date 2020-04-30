@@ -397,4 +397,27 @@ header .redes-sociales .whatsapp:hover {
     margin-bottom: 15px;
 }
 
+.main-skills .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-skills .container .titulos-secciones {
+    width: 100%;
+}
+
+/* .main-skills .container .imagen-skills {
+    width: 50%;
+} */
+
+.main-skills .container .imagen-skills img {
+    width: 70%;
+    align-self: center;
+}
+
+/* .main-skills .container .barra-skills {
+    width: 50%;
+} */
 
