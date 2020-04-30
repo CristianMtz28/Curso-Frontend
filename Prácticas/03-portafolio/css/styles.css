@@ -30,6 +30,7 @@ body {
 .boton-negro:hover{
     text-decoration: underline;
     background-color: #000;
+    cursor: pointer;
 }
 
 .titulos-secciones{
@@ -52,7 +53,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    max-height: 1080px;
 }
 
 header .menu-logo {
@@ -81,7 +81,6 @@ header .menu-logo .menu a:hover {
 header .tarjeta-blanca {
     width: 100%;
     max-width: 1084px;
-    max-height: 742px;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 28px;
     padding: 50px;
@@ -289,7 +288,10 @@ header .redes-sociales .whatsapp:hover {
 
 .main-acerca-de-mi .container .acerca-de-mi-img img:hover{
     opacity: 1;
-    border: solid 1px #fff;
+}
+
+.main-acerca-de-mi .container .acerca-de-mi-img img:focus{
+    outline: 0px;
 }
 
 
@@ -397,6 +399,9 @@ header .redes-sociales .whatsapp:hover {
     margin-bottom: 15px;
 }
 
+
+/* ------- SKILLS/CV ------- */
+
 .main-skills .container {
     display: flex;
     flex-direction: row;
@@ -408,16 +413,435 @@ header .redes-sociales .whatsapp:hover {
     width: 100%;
 }
 
-/* .main-skills .container .imagen-skills {
-    width: 50%;
-} */
-
 .main-skills .container .imagen-skills img {
     width: 70%;
     align-self: center;
 }
 
-/* .main-skills .container .barra-skills {
-    width: 50%;
-} */
+.main-skills .container .barra-skills .frase-skills {
+    font-size: 1.3em;
+    font-weight: 300;
+    text-align: center;
+}
 
+.main-skills .container .barra-skills p {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.main-skills .container .barra-skills .skill-html {
+    width: 90%;
+    height: 10px;
+    background-color: teal;
+}
+
+.main-skills .container .barra-skills .skill-css {
+    width: 70%;
+    height: 10px;
+    background-color: teal;
+}
+
+.main-skills .container .barra-skills .skill-javascript {
+    width: 28%;
+    height: 10px;
+    background-color: teal;
+    margin-bottom: 28px;
+}
+
+.main-skills .container .barra-skills .boton-negro {
+    width: 20%;
+    text-align: center;
+}
+
+/* ------- PROYECTOS ------- */
+
+.main-proyectos {
+    background-color: #f2f2f2;
+    padding: 0px 0px 50px 0px;
+}
+
+.main-proyectos .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-proyectos .container p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.main-proyectos .container .slide-proyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-proyectos .container .slide-proyectos a img {
+    width: 100px;
+    margin: 40px;
+    border-radius: 100%;
+    border: 3px solid #280614;
+}
+
+.main-proyectos .container .slide-proyectos a img:hover {
+    border: 3px solid teal;
+}
+
+
+/* ------- SECCIÓN CONTACTO ------- */
+
+.main-contacto {
+    background-color: teal;
+    background-image:
+    linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+    ),
+    url(../img/contact.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    max-height: 1080px;
+    padding: 0 0 100px 0;
+}
+
+.main-contacto .container {
+    max-width: 1000px;
+}
+
+.main-contacto .container p {
+    font-weight: 350;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.main-contacto .container .formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.main-contacto .container .formulario .form-name {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    border: 1px solid #2b3137;
+    padding: 10px;
+}
+
+.main-contacto .container .formulario .form-email {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    border: 1px solid #2b3137;
+    padding: 10px;
+}
+
+.main-contacto .container .formulario .form-message {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 20px;
+    border: 1px solid #2b3137;
+    padding: 10px;
+}
+
+.main-contacto .container .formulario .boton-negro {
+    width: 100%;
+    max-width: 200px;
+    margin-left: 40%;
+    margin-right: 60%;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus,
+.formulario .boton-negro:focus {
+    border: 2px solid #4fb560;
+    outline: 0px; /*Por defecto se pone un border azul cuando seleccionas un elemento pero con esta propiedad podemos quitarla y dejar nuestro estilo como queremos*/
+}
+
+
+/* ------- FOOTER -------*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #2b3137;
+}
+
+footer .firma {
+    color: #fff;
+}
+
+footer .firma a {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+footer .firma a:hover{
+    color: teal;
+}
+
+footer .redes-sociales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+footer .redes-sociales .facebook {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #1877f2;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin: 10px 28px 20px 0px;
+}
+
+footer .redes-sociales .twitter {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #1da1f2;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin: 10px 28px 20px 0px;
+}
+
+footer .redes-sociales .instagram {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #ae316b;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin: 10px 28px 20px 0px;
+}
+
+footer .redes-sociales .youtube {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin: 10px 28px 20px 0px;
+}
+
+footer .redes-sociales .github {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #fff;
+    color: #2b3137;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin: 10px 28px 20px 0px;
+}
+
+footer .redes-sociales .whatsapp {
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 5px 5px 5px;
+    margin: 10px 10px 20px 0px;
+}
+
+footer .redes-sociales .facebook:hover {
+    background-color: #fff;
+    color: #1877f2;
+}
+
+footer .redes-sociales .twitter:hover {
+    background-color: #fff;
+    color: #1da1f2;
+}
+
+footer .redes-sociales .instagram:hover {
+    background-color: #fff;
+    color: #ae316b;
+}
+
+footer .redes-sociales .youtube:hover {
+    background-color: #fff;
+    color: #ff0000;
+}
+
+footer .redes-sociales .github:hover {
+    background-color: #2b3137;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+footer .redes-sociales .whatsapp:hover {
+    background-color: #fff;
+    color: #009688;
+}
+/* ------- CELULARES ------ */
+
+@media screen and (max-width:578px) {
+    body {
+        font-size: 19px;
+    }
+
+    /* --- HEADER MÓVIL --- */
+    header .menu-logo {
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .menu-logo .menu {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 28px;
+        padding: 20px;
+    }
+
+    header .menu-logo a {
+        color: #ccc;
+        font-weight: normal;
+        font-size: 1em;
+        text-decoration: none;
+        margin: 0 10px;
+        line-height: 50px;
+        border-bottom: 2px solid transparent;
+    }
+
+    header .tarjeta-blanca {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 125px;
+        color:#fff;
+        overflow: hidden;
+        padding: 5%;
+    }
+
+    header .tarjeta-blanca .foto-tarjeta-blanca {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    header .tarjeta-blanca .foto-tarjeta-blanca img {
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+    }
+
+    header .info-tarjeta-blanca {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+        font-weight: 250;
+        text-align: center
+    }
+
+    header p {
+        font-weight: 300;
+        font-size: 1em;
+        font-style: italic;
+        text-align: center
+    }
+
+    header .redes-sociales {
+        margin-top: 15%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ------- ACERCA DE MÍ -------*/
+
+    .main-acerca-de-mi .container {
+        background-color: #f2f2f2;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-acerca-de-mi .container .acerca-de-mi {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .main-acerca-de-mi .container .acerca-de-mi .titulos-secciones {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-acerca-de-mi .container .acerca-de-mi p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .main-acerca-de-mi .container .acerca-de-mi-img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .main-acerca-de-mi .container .acerca-de-mi-img img{
+        width: 100%;
+    }
+
+    
+}

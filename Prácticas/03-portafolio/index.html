@@ -148,11 +148,11 @@
             <div class="barra-skills">
                 <h4 class="frase-skills">"No uso lentes pero me hacen ver más inteligente..."</h4>
                 <p>HTML 90%</p>
-                <div class="skill"></div>
+                <div class="skill-html"></div>
                 <p>CSS 70%</p>
-                <div class="skill"></div>
+                <div class="skill-css"></div>
                 <p>JavaScript 28%</p>
-                <div class="skill"></div>
+                <div class="skill-javascript"></div>
                 <div class="boton-negro">VER CV</div>
             </div>
         </div>
@@ -161,10 +161,13 @@
     <!--Sección de Proyectos-->
     <section class="main-proyectos">
         <div class="container">
-            <h3 class="titulo-secciones">Proyectos</h3>
+            <h3 class="titulos-secciones">Proyectos</h3>
             <p>Estos son algunos proyectos personales; te invito a que nos ayudes a crecer</p>
             <div class="slide-proyectos">
-                <p>No tengo idea de como poner esto jajaja</p>
+                <div class="imagenes-proyectos">
+                    <a href="https://manejofacil.com" target="_blank"><img src="img/manejofacil.png" alt="Manejo Fácil" title="Manejo Fácil"></a>
+                    <a href="https://cristianmtz.com" target="_blank"><img src="img/logonegro.jpeg" alt="Cristian Martínez" title="Cristian Martínez | Website"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -172,13 +175,13 @@
     <!--Sección de Contacto-->
     <section class="main-contacto">
         <div class="container">
-            <h3 class="titulo-secciones">¡Mándame un mensaje!</h3>
+            <h3 class="titulos-secciones">¡Mándame un mensaje!</h3>
             <p>Haz una propuesta, dime que necesitas o simplemente di ¡Hola!</p>
-            <form action="">
-                <input type="text" placeholder="Placeholder/Nombre" maxlength="10" name="nombre" required>
-                <input type="email" name="correo" placeholder="Correo" required>
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <input type="submit" class="boton-negro" value="Enviar">
+            <form action="" class="formulario">
+                <input class="form-name" type="text" placeholder="Placeholder/Nombre" name="nombre" required>
+                <input class="form-email" type="email" name="correo" placeholder="Correo" required>
+                <textarea class="form-message" name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input class="boton-negro" type="submit" class="boton-negro" value="Enviar">
             </form>
         </div>
     </section>
@@ -186,7 +189,7 @@
     <!--Sección del footer-->
     <footer>
         <div class="firma">
-            Sitio web creado por Digital Jet | Copyright @ 2020
+            Sitio web creado por <a href="#">Digital Jet</a>  | Copyright @ 2020
         </div>
         <div class="redes-sociales">
             <a target="_blank" href="https://www.facebook.com/cristianmtz28"><i class="fa fa-facebook facebook"></i></a>
@@ -194,7 +197,7 @@
             <a target="_blank" href="https://www.instagram.com/cristianmtz28"><i class="fa fa-instagram instagram"></i></a>
             <a target="_blank" href="https://www.youtube.com/cristianmtz28"><i class="fa fa-youtube-play youtube"></i></a>
             <a target="_blank" href="https://www.github.com/cristianmtz28"><i class="fa fa-github github"></i></a>
-            <a target="_blank" href="https://wa.me/5215611097466?text=Hola, ¿Cómo estás?."><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://wa.me/5215611097466?text=Hola, ¿Cómo estás?"><i class="fa fa-whatsapp whatsapp" aria-hidden="true"></i></a>
         </div>
     </footer>
 </body>
