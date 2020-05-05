@@ -407,21 +407,31 @@ header .redes-sociales .whatsapp:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .main-skills .container .titulos-secciones {
     width: 100%;
 }
 
+.main-skills .container .imagen-skills {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
 .main-skills .container .imagen-skills img {
     width: 70%;
-    align-self: center;
+}
+
+.main-skills .container .barra-skills {
+    width: 50%;
+    justify-content: flex-start;
 }
 
 .main-skills .container .barra-skills .frase-skills {
     font-size: 1.3em;
     font-weight: 300;
-    text-align: center;
 }
 
 .main-skills .container .barra-skills p {
@@ -842,6 +852,160 @@ footer .redes-sociales .whatsapp:hover {
     .main-acerca-de-mi .container .acerca-de-mi-img img{
         width: 100%;
     }
+
+    /* --- CONTENIDO VIDEOS --- */
+
+    .main-contenido .container .seccion-videos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-contenido .container .seccion-videos .video-principal {
+        width: 100%;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-contenido .container .resto-videos {
+        width: 100%;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* --- VIAJES --- */
+
+    .main-viajes .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .main-viajes .container .titulos-secciones {
+        font-size: 2.2em;
+        font-weight: 300;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .main-viajes .container .viajes-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-viajes .container .viajes-cards .viajes {
+        margin: 15px 0;
+    }
+
+    /* --- SKILLS CV --- */
+
+    .main-skills .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 15px 10px 50px 10px;
+    }
+
+    .main-skills .container .imagen-skills {
+        width: 100%;
+    }
+
+    .main-skills .container .barra-skills {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-skills .container .barra-skills p {
+        align-self: flex-start;
+    }
+
+    .main-skills .container .barra-skills .skill-html {
+        align-self: flex-start;
+    }
+
+    .main-skills .container .barra-skills .skill-css {
+        align-self: flex-start;
+    }
+
+    .main-skills .container .barra-skills .skill-javascript {
+        align-self: flex-start;
+    }
+
+    .main-skills .container .barra-skills .boton-negro {
+        width: 40%;
+        text-align: center;
+    }
+
+    /* --- PROYECTOS --- */
+
+    .main-proyectos .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-proyectos .container .slide-proyectos .imagenes-proyectos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 80%;
+    }
+
+    /* --- CONTACTO --- */
+
+    .main-contacto .container .formulario .boton-negro {
+        width: 100%;
+        max-width: 200px;
+        margin: auto;
+    }
+
+    /* --- FOOTER --- */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 100px;
+        background-color: #2b3137;
+    }
+
+    footer .redes-sociales {
+        display: none
+    }
+
+    footer .firma {
+        color: #fff;
+        font-size: 15px;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
 
     
 }
