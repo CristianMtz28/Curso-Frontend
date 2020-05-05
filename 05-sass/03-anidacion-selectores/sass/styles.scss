@@ -1,0 +1,67 @@
+/*Anidación SASS*/
+
+/*La anidación es la forma en la que se escribe el código de SASS, y en vez de poner
+
+.articulo .titulo {
+
+}
+
+Se pone:
+
+.articulo {
+    .titulo {
+        //Código CSS
+    }
+}
+
+Esto para que sea más legible y mejor acomdoado; también se pueden seguir
+usando las variables sin ningún problema
+*/
+
+$colorNaranja: #f9a03f;
+$azul: #1b3d82;
+
+body {
+    background-color: $azul;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articulo {
+    background-color: #e9f1f7;
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    .titulo {
+        color: $colorNaranja;
+    }
+
+    .autor {
+        color: #4d5061;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        a {
+            color: $colorNaranja;
+            &:hover {
+                color: $azul;
+            }
+        }
+    }
+
+    div {
+        text-align: center;
+        a {
+            text-decoration: none;
+            font-size: 25px;
+            color: $colorNaranja;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

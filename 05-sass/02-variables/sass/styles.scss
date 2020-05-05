@@ -1,0 +1,15 @@
+/*VARIABLES SASS*/
+/*Las variables son una herramienta que tenemos en los lenguajes de programación que nos permiten guardar valores dentro
+de ellas para poder reutilizarlas en nuestro código*/
+
+$primaryColor: #3b5998;
+
+.articulo {
+    .titulo{
+        color: $primaryColor;
+    }
+
+    p {
+        color: $primaryColor;
+    }
+}
