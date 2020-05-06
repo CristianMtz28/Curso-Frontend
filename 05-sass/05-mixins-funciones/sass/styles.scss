@@ -1,0 +1,23 @@
+/*Mixin & Funciones*/
+//El mixin  nos permite recibir valores para después procesarlos dentro (Es como una función en programación)
+    
+
+/*EJEMPLO DE MIXINS*/
+@mixin colores ($fondo, $articulo) {
+    body {
+        background: $fondo;
+        .articulo {
+            background: $articulo;
+        }
+    }
+};
+
+@include colores (#ff8000, #fff);
+
+@mixin border-redondeado ($pixeles) {
+    article{
+        border-radius: $pixeles;
+    }
+}
+
+@include border-redondeado(5px);
