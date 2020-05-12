@@ -1,0 +1,18 @@
+$colorFondo: #4a465b;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $colorFondo;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.contenedor{
+    width: 1000px;
+    margin: 20px auto;
+}
