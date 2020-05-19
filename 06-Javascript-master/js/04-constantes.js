@@ -7,7 +7,7 @@ programa; por eso se llama constante, porque es constante y nunca va a
 cambiar.
 */
 
-var web = "http://cristianmtz.com";
+var web = "https://cristianmtz.com";
 const ip = "192.88.0.12";
 
 web = "http://cristianmtz28.com";

@@ -11,7 +11,7 @@ para así tener un comentario multilinea
 //VARIABLES
 /*
 Una variable es un contenedor de información, es cómo si tuvieras una caja y dentro guardarás datos; dichos datos contienen
-strings, entero, arrays, cualquier tipo de dato lo podemos guardar en un variable.
+strings, enteros, arrays, cualquier tipo de dato lo podemos guardar en un variable.
 Para definir una variable en javascript debemos poner var y el nombre de la variable; ejemplo:
 
 var country = 'México';
