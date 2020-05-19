@@ -43,7 +43,7 @@ if(true){
 console.log(number); //El valor debe ser 50
 
 //Ejemplo con LET
-const text = 'Hola soy un ejemplo con Var';
+var text = 'Hola soy un ejemplo con Var';
 console.log(text) //El valor debe ser Hola soy un ejemplo con Var
 
 if(true){
