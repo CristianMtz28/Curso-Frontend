@@ -271,6 +271,7 @@ header .redes-sociales .whatsapp:hover {
     font-weight: 300;
     align-self: center;
     margin-bottom: 45px;
+    text-align: justify;
 }
 
 .main-acerca-de-mi .container .acerca-de-mi-img img{
@@ -385,6 +386,7 @@ header .redes-sociales .whatsapp:hover {
     padding: 0 5%;
     font-weight: 300;
     font-size: 0.8em;
+    text-align: justify;
 }
 
 .main-viajes .container .viajes .texto-viaje  {
