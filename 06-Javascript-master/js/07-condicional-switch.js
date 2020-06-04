@@ -8,7 +8,7 @@ condición exacta predeterminada
 */
 
 var age = 28;
-var message = "";
+var message = "¿Cómo no te has muerto?";
 
 switch (age) {
     case age=18:
@@ -25,6 +25,10 @@ switch (age) {
 
     case age=50:
         console.log('Medio siglo quitando aire');
+    break;
+
+    case age=100:
+        console.log(message);
     break;
 
     default:

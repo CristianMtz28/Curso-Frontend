@@ -24,7 +24,8 @@ Mayor que >
 Menor que <
 Mayor o igual que >=
 Menor o igual que <=
-Exactamente igual ==
+Igual ==
+Exactamente igual === (Este compara hasta el tipo de dato)
 Diferente !=
 */
 var age1 = 30; //Definición de la variable la edad 1 es igual a 30
@@ -60,7 +61,9 @@ if(team == 'PSG'){
     alert('Es un equipazo');
     if(position == 1){
         alert('Son unos campeones');
-    } else{
+    } else if(position == 2){
+        alert('¡Uy! Casi...');
+    } else {
         alert('Suerte para la próxima');
     }
 } else {
@@ -69,8 +72,36 @@ if(team == 'PSG'){
 
 /*
 También podemos hacer un else if(){
-
+    Ver línea de código 64, 65 & 66
 }
 
 Que es ponerle una condición al else
 */
+
+
+//OPERADORES LÓGICOS
+/*
+AND(Y): &&
+OR(O):||
+NEGACIÓN: !
+
+*/
+
+//Negación
+
+var year = 2018;
+if(year != 2020){
+    console.log('El año es incorrecto; estamos en 2020');
+}
+
+//AND
+
+if(year >= 2000 && year <= 2020){
+    console.log('Estamos en la era actual');
+}
+
+//OR
+
+if(year == 2008 || year == 2018){
+    console.log('El año acaba en 8');
+}
