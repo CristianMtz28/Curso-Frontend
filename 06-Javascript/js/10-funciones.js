@@ -60,7 +60,7 @@ function suma(numero1, numero2){
 
 document.write(suma(4,7) + '<br>');
 
-/**También podemos guardar una función dentro de una suma */
+/**También podemos guardar una función dentro de una variable */
 
 var resta = function(numero5, numero6){ //Es una función anónima (sin nombre) porque la estamos guardando dentro de una variable
     return numero5 - numero6;

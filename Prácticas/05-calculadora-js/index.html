@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="main.js"> <!--Nuestra calculadora esta compuesto por formularios-->
+            <input type="text" id="numero1"> <!--Tanto el input número 1 como número 2 tienen que tener id para identificarlos en javascript-->
+            <p>+</p>
+            <input type="text" id="numero2">
+            <p>=</p>
+            <input type="text" id="resultado" readonly> <!--Le ponemos readonly para sólo ejercer lectura y no edición-->
+            <input type="button" class="btn" onclick="suma()" value="Resultado"> <!--Ponemos el botón de resultado con el evento
+            onclick="suma()" para llamar la función de nuestro archivo de javascript-->
+        </form>
+    </div>
+
+    <!--Scripts-->
+    <script src="main.js"></script>
+</body>
+</html>
