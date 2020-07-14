@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>PRÁCTICA: Formulario con Javascript</title>
+</head>
+<body>
+    <!--Formulario-->
+    <div class="contenedor">
+        <form action="" class="formulario" id="formulario" name="formulario">
+            <div class="contenedor-inputs">
+                <!--Nombre-->
+                <input type="text" name="nombre" placeholder="Nombre">
+                <!--Correo-->
+                <input type="email" name="correo" placeholder="Correo">
+
+
+                <!--Div para que con flexbox podamos dividir los botones hacía a la derecha-->
+                <div class="sexo">
+                    <!--Hombre-->
+                    <input type="radio"  name="sexo" id="hombre" value="hombre">
+                    <label for="hombre" class="label-radio">Hombre</label>
+                    <!--Mujer-->
+                    <input type="radio" name="sexo" id="mujer" value="mujer">
+                    <label for="mujer" class="label-radio">Mujer</label>
+                </div>
+
+
+                <!--Términos-->
+                <div class="terminos">
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <label for="terminos">Acepto Términos & Condiciones</label>
+                </div>
+                
+                <ul class="error">
+                    <li>Error 1</li>
+                    <li>Error 2</li>
+                </ul>
+            </div>
+            <!--Enviar-->
+            <input type="submit" class="btn" value="Registrarse">
+        </form>
+    </div>
+    <!--SCRIPTS-->
+    <script src="js/main.js"></script>
+</body>
+</html>
