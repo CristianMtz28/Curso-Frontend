@@ -17,7 +17,6 @@ body {
 
 .formulario .contenedor-inputs {
     background-color: #fff;
-    margin: 20px;
     border-radius: 15px 15px 0 0;
     padding: 20px;
 }
@@ -76,7 +75,7 @@ body {
 }
 
 .formulario .error {
-    /* display: none; */
+    display: none;
     margin-top: 20px;
     border-radius: 3px;
     background-color: red;
@@ -96,7 +95,7 @@ body {
     cursor: pointer;
     border-radius: 0 0 7px 7px;
     font-family: 'Questrial', sans-serif;
-    font-style: 21px;
+    font-size: 21px;
 }
 
 .formulario .btn:hover {
