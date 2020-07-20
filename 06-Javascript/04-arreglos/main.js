@@ -24,4 +24,4 @@ console.log(meses);
 var amigos = [];
 
 amigos[0] = 'Cristian';
-amigos[1] = 'Daniel';
+amigos[4] = 'Daniel';
