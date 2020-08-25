@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    margin: 20px;
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+@keyframes colores {
+    0%{background-color: orange;}
+    50%{background-color: orangered;}
+    100%{background-color: red;}
+}
+
+.animacion {
+    animation: colores 3s ease;
+}
