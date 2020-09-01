@@ -1,2 +1,12 @@
-.articulo .titulo{color:#3b5998}.articulo p{color:#3b5998}
+@charset "UTF-8";
+/*VARIABLES SASS*/
+/*Las variables son una herramienta que tenemos en los lenguajes de programación que nos permiten guardar valores dentro
+de ellas para poder reutilizarlas en nuestro código*/
+.articulo .titulo {
+  color: #3b5998;
+}
+
+.articulo p {
+  color: #3b5998;
+}
 /*# sourceMappingURL=styles.css.map */

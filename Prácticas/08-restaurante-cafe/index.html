@@ -4,10 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[PRÁCTICA]: Creando una página para un restaurante</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Montserrat&display=swap" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="sass/styles.css">
 </head>
 <body>
+    
+
+    <!--Parte superior del sitio-->
+    <header><!--Header con menú y background de imagen-->
+        <div class="contenedor"><!--Div que encierra todo el menú con el banner-->
+            <nav class="menu"><!--Div del menú-->
+                <ul>
+                    <li><a href="" id="#btn-acerca-de">Acerca De</a></li><!--Enlaces del menú con el id para trabajar con jQuery-->
+                    <li><a href="" id="#btn-menu">Menú</a></li>
+                    <li><a href="" id="#btn-galeria">Galería</a></li>
+                    <li><a href="" id="#btn-ubicacion">Ubicación</a></li>
+                </ul>
+            </nav><!--Fin del div del menú-->
+            <div class="textos"><!--Parte del texto con el nombre del restaurante y un pequeño slogan-->
+                <h1 class="nombre-restaurante">Café de prueba</h1>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+            </div>
+        </div>
+    </header>
+
+    <!--Contendio principal del sitio; o sea la información que lleva la página-->
+    <section class="main">
+        <!--ACERCA DE-->
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/acerca-de.jpg" alt="Restaurante con excelenencia en café">
+                </div>
+                <article>
+                    <h3>Acerca de</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </article>
+            </div>
+        </section>
+
+        <!--MENÚ DE LOS PLATILLOS DEL RESTAURANTE-->
+        <section class="menuRes" id="menuRes">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Menú</h3>
+                <div class="contenedor-menu">
+                    <div class="contenedor-menu2">
+                        <!--Menú de comida-->
+                        <article>
+                            <p class="categoria">Snacks</p>
+                            <!--Platillo 1-->
+                            <div class="platillo">
+                                <p class="nombre">Crepa de Nutella</p>
+                                <p class="precio">$45</p>
+                                <p class="descripcion">Crepa dulce rellena de Nutella</p>
+                            </div>
+                            <!--Platillo 2-->
+                            <div class="platillo">
+                                <p class="nombre">Crepa de Chocolate</p>
+                                <p class="precio">$45</p>
+                                <p class="descripcion">Crepa dulce rellena de chocolate hershey's</p>
+                            </div>
+                            <!--Platillo 3-->
+                            <div class="platillo">
+                                <p class="nombre">Crepa de Fresa con Nutella</p>
+                                <p class="precio">$55</p>
+                                <p class="descripcion">Crepa dulce rellena de Nutella con Fresas Naturales</p>
+                            </div>
+                            <!--Platillo 4-->
+                            <div class="platillo">
+                                <p class="nombre">Quesadillas de la Abuela</p>
+                                <p class="precio">$25</p>
+                                <p class="descripcion">2 Sincronizadas con tortilla de Harina rellenas de jamón y queso manchego</p>
+                            </div>
+                        </article>
+
+                        <!--Menú de bebidas-->
+                        <article>
+                            <p class="categoria">Cafés y Tés</p>
+                            <!--Platillo 1-->
+                            <div class="platillo">
+                                <p class="nombre">Granizados</p>
+                                <p class="precio">$35</p>
+                                <p class="descripcion">Delicioso semiraspados de diferentes sabores</p>
+                            </div>
+                            <!--Platillo 2-->
+                            <div class="platillo">
+                                <p class="nombre">Frappe de Caramelo</p>
+                                <p class="precio">$40</p>
+                                <p class="descripcion">Frappe de café helado con cajeta</p>
+                            </div>
+                            <!--Platillo 3-->
+                            <div class="platillo">
+                                <p class="nombre">Capuccino Moka</p>
+                                <p class="precio">$35</p>
+                                <p class="descripcion">Café caliente sabor moka</p>
+                            </div>
+                            <!--Platillo 4-->
+                            <div class="platillo">
+                                <p class="nombre">Té de Manzanilla</p>
+                                <p class="precio">$25</p>
+                                <p class="descripcion">Té de hierbas naturales sabor manzanilla</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--GALERÍA-->
+        <section  class="galeria" id="galeria">
+            <div class="contenedor">
+                <!--Foto 1-->
+                <div class="foto">
+                    <img src="img/1.jpg" alt="Foto de Galería">
+                </div>
+
+                <!--Foto 2-->
+                <div class="foto">
+                    <img src="img/2.jpg" alt="Foto de Galería">
+                </div>
+
+                <!--Foto 3-->
+                <div class="foto">
+                    <img src="img/3.jpg" alt="Foto de Galería">
+                </div>
+
+                <!--Foto 4-->
+                <div class="foto">
+                    <img src="img/4.jpg" alt="Foto de Galería">
+                </div>
+
+                <!--Foto 5-->
+                <div class="foto">
+                    <img src="img/5.jpg" alt="Foto de Galería">
+                </div>
+
+                <!--Foto 6-->
+                <div class="foto">
+                    <img src="img/6.jpg" alt="Foto de Galería">
+                </div>
+
+                <!--Foto 7-->
+                <div class="foto">
+                    <img src="img/7.jpg" alt="Foto de Galería">
+                </div>
+
+                <!--Foto 8-->
+                <div class="foto">
+                    <img src="img/8.jpg" alt="Foto de Galería">
+                </div>
+            </div>
+        </section>
+
+        <!--UBICACIÓN-->
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo">Ubicación</h3>
+                <div class="direccion">
+                    <p class="calle">Viveros de Chapultepec 19a<br> Viveros de la Loma C.P 54080</p>
+                    <p class="telefono">5611097466</p>
+                    <p class="correo">cristianmtz [arroba] gmail.com</p>
+                </div>
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p class="entre-semana">Lunes a viernes <br> 8:00am - 10:00pm</p>
+                    <p class="fin-semana">Sábados y domingos <br> 9:00am - 10:00pm</p>
+                </div>
+            </div>
+        </section>
+
+        <!--MAPA-->
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.5022688210506!2d-99.2228804855878!3d19.52003854293803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202cdabe6d6a3%3A0xf2e31f1203435932!2sCalle%20Viveros%20de%20Chapultepec%2019-a%2C%20Hab%20Viveros%20de%20la%20Loma%2C%2054080%20Tlalnepantla%20de%20Baz%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1598977734418!5m2!1ses!2smx" width="1600" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </section>
+
+
+    <!--FOOTER DEL SITIO-->
+    <footer>
+        <div class="contenedor">
+            <div class="copyright">
+                <p>Copyright Cristian Martínez | 2020</p>
+            </div>
+        </div>
+    </footer>
     
 
     <!--Scripts-->

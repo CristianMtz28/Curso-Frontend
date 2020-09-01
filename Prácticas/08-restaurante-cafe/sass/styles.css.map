@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACUA;;EAEE",
+    "sources": [
+        "styles.scss",
+        "_generales.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

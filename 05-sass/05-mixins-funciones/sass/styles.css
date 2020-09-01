@@ -1,2 +1,14 @@
-body{background:#ff8000}body .articulo{background:#fff}article{border-radius:5px}
+/*Mixin & Funciones*/
+/*EJEMPLO DE MIXINS*/
+body {
+  background: #ff8000;
+}
+
+body .articulo {
+  background: #fff;
+}
+
+article {
+  border-radius: 5px;
+}
 /*# sourceMappingURL=styles.css.map */
