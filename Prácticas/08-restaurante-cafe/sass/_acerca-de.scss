@@ -1,0 +1,42 @@
+.acerca-de {
+    .contenedor {
+        overflow: visible; //Esta propiedad nos ayuda a mostrar la imagen con el excedente; en los estilos generales pusimo un overflow: hidden; esto para esconder parte de la imagen, aquí se lo añadimos para los efectos
+        position: relative;
+    }
+
+    .foto {
+        width: 80%; //Vamos a poner el 80% ya que el recuadro con texto de la derecha ocupará el otro 20%
+        position: absolute; //Eso nos ayuda a poner la imagen encima del contenedor; gracias a que el contenedor tiene la posición relativa y la imagen absoluta se posiciona encima del header debido a los overflow
+        left: 0; //Le quitamos espacio a la izquierda
+        top:-50px; //Ponemos la imagen 50px arriba del contenedor
+        z-index: 0; //INVESTIGAR BIEN EL Z INDEX
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+
+        img {
+            vertical-align: top; //Si no le ponemos esta propiedad nos queda la imagen descuadrada del div por lo que la mayoría de las imagenes debe tener esta propiedad
+            width: 100%; //Le indicamos que abarque el 100% del div que lo contiene y abarca el 80% real del div
+        }
+    }
+
+    article {
+        background-color: #fff;
+        padding: 40px;
+        width: 50%;
+        position: relative; //Este position relative es igual que con la foto, nos va a permitir manipular la posición del texto
+        top:150px;
+        z-index: 1;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
+        float: right;
+
+        h3 {
+            font-size: 50px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        p {
+            line-height: 28px;
+            margin-bottom: 15px;
+        }
+    }
+}
