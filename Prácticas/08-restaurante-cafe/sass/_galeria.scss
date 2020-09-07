@@ -1,0 +1,19 @@
+.galeria {
+    overflow: hidden; //Como las fotografías las vamos a trabajar con float, entonces para sokucionar problemas con el excediente de las imagenes
+
+    .foto {
+        width: 25%;
+        float: left;
+
+        img {
+            width: 100%;
+            vertical-align: top;
+            opacity: 0.7;
+        }
+
+        img:hover{
+            opacity: 1;
+            transition: all 0.7s ease;
+        }
+    }
+}

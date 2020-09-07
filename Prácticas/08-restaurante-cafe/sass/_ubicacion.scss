@@ -1,0 +1,40 @@
+.ubicacion {
+    background-color: #fff;
+    padding: 60px 0;
+    overflow: hidden;
+
+    .titulo {
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    .direccion {
+        float: left;
+        width: 50%; //El 50% de la dirección 
+        text-align: left;
+
+        .calle{
+            margin-bottom: 15px;
+        }
+    }
+
+    .horarios {
+        float: right;
+        width: 50%; //El otro 50% que comparte con direccion
+        text-align: right;
+
+        h4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .entre-semana, .fin-semana {
+            width: 50%;
+            text-align: center;
+            float: left;
+        }
+    }
+}
