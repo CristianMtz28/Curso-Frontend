@@ -77,6 +77,27 @@ header .textos h3 {
   font-size: 25px;
 }
 
+/******* MEDIA QUERIES *******/
+@media screen and (max-width: 800px) {
+  header .contenedor {
+    position: static;
+    height: auto;
+  }
+  header .textos {
+    position: static;
+    margin: 100px 0;
+  }
+  header .textos .nombre-restaurante {
+    font-size: 28px;
+  }
+  header .textos h3 {
+    font-size: 20px;
+  }
+  header .menu {
+    text-align: center;
+  }
+}
+
 .main {
   background: url(../img/bg-textura.png);
 }
@@ -122,6 +143,21 @@ header .textos h3 {
 .acerca-de article p {
   line-height: 28px;
   margin-bottom: 15px;
+}
+
+/******* MEDIA QUERIES *******/
+@media screen and (max-width: 800px) {
+  .acerca-de .foto {
+    width: 100%;
+    position: relative;
+  }
+  .acerca-de article {
+    width: 100%;
+    position: relative;
+    top: -35px;
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
 }
 
 .menuRes {
@@ -188,6 +224,16 @@ header .textos h3 {
   clear: both;
 }
 
+/******* MEDIAQUERIES ******/
+@media screen and (max-width: 800px) {
+  .menuRes {
+    padding-top: 300px;
+  }
+  .menuRes .contenedor-menu2 article {
+    width: 100%;
+  }
+}
+
 .galeria {
   overflow: hidden;
 }
@@ -207,6 +253,13 @@ header .textos h3 {
   opacity: 1;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+}
+
+/******* MEDIAQUERIES ******/
+@media screen and (max-width: 800px) {
+  .galeria .foto {
+    width: 50%;
+  }
 }
 
 .ubicacion {
@@ -258,6 +311,13 @@ header .textos h3 {
 .mapa iframe {
   width: 100%;
   height: 600px;
+}
+
+@media screen and (max-width: 800px) {
+  .mapa {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 footer {

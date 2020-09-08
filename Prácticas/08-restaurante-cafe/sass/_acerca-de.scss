@@ -40,3 +40,31 @@
         }
     }
 }
+
+
+/******* MEDIA QUERIES *******/
+
+//TABLETS
+
+@media screen and (max-width: 800px){
+    .acerca-de {
+        .foto {
+            width: 100%; //le decimos a nuestra imagen que abarque el 100% del ancho
+            position: relative; //Con estapropiedad pondremos la imagen en una osición relativa y no absoluta para que se acomode de manera uniforme
+        }
+
+        article {
+            width: 100%; //le decimos a nuestro acerca de que abarque el 100% del ancho
+            position: relative; //Con estapropiedad pondremos la imagen en una osición relativa y no absoluta para que se acomode de manera uniforme
+            top: -35px; //Como le habíamos puesto un top para el efecto parallax, en una tablet le quitaremos el efecto parallax y lo posicionaremos a un altura adecuada debajo de la imagen
+            transform: translate(0px, 0); //Esto es para trabajar con jQuery
+        }
+    }
+}
+
+
+//CELULARES
+
+@media screen and (max-width: 400px){
+    
+}

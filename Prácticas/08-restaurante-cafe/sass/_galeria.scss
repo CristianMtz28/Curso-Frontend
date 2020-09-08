@@ -17,3 +17,15 @@
         }
     }
 }
+
+/******* MEDIAQUERIES ******/
+
+//TABLETS
+
+@media screen and (max-width:800px){
+    .galeria {
+        .foto {
+            width: 50%;
+        }
+    }
+}

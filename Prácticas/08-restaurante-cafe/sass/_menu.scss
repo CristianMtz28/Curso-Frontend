@@ -61,3 +61,21 @@
         }
     }
 }
+
+/******* MEDIAQUERIES ******/
+
+//TABLETS
+
+@media screen and (max-width: 800px){
+    .menuRes {
+        padding-top: 300px;
+
+        .contenedor-menu2 {
+            article {
+                width: 100%;
+            }
+        }   
+        
+    }
+}
+
