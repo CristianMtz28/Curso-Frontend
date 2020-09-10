@@ -24,6 +24,7 @@ header {
             font-weight: 400;
             text-decoration: none;
             position: relative; //Esta propiedad se la incluimos para lograr el efecto de ir cayendo lentamente de arriba a bajo con jQuery; si no se lo ponemos no nos va  a servir
+            //NOTA: YA PUSE EL CÓDIGO JQUERY Y YA NOTE QUE SI QUITAMOS LA POSICIÓN RELATIVA SE VUELVE COMO ABSOLUTA LO QUE NO DEJARÍA QUE EL EFECTO APLICARÁ YA QUE MOVERÍAMOS LA POSICIÓN DE LOS ELEMENTOS
         }
 
         a:hover {
