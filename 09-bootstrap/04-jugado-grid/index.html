@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>03-Creando nuestra Grid | Curso Frontend: Bootstrap</title>
+    <style>
+
+        .container {
+            border: 1px solid #000;
+        }
+
+        .encabezado{
+            background-color: #f2f2f2;
+        }
+
+        .lateral {
+            background-color: teal;
+            padding: 200px 50px 200px 50px;
+        }
+
+        .main{
+            padding: 200px 50px 200px 50px;
+        }
+
+        .footer {
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Contenedor-->
+    <div class="container">
+        <!--Row del Header-->
+        <div class="row">
+            <div class="col-12 encabezado">
+                <h2>Encabezado</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-2 col-md-6 col-12 lateral">
+                <h2>Barra Lateral</h2>
+            </div>
+            <div class="col-xl-10 col-md-6 col-12 main">
+                <h2>Main</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 footer">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
