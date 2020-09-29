@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>05- Flexbox | Curso Frontend: Bootstrap</title>
+    <style>
+        .contenedor {
+            margin-bottom: 20px;
+            background-color: #e8e8e8;
+            color: #fff;
+            height: 200px;
+        }
+
+        .contenedor div {
+            background-color: #4f5ef5;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255, .25);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Contenedor-->
+    <div class="container">
+        
+        <!--Align-Items-->
+        <div class="row my-4"> <!--my significa un margen en la línea y del plano cartesiano + donde la línea vertical es la X y la horizontal es la Y; bootstrap nos permite tener estos margenes del 1 al 5-->
+            <div class="col">
+                <h4>Align items</h4>
+                <hr>
+
+                <p>.align-items-start</p>
+                <div class="contenedor d-flex align-items-start"> <!--Con align-item-start los elementos tendrán su altura propia aunque el contenedor padre sea más alto y en vez de estirarse se quedarán con su altura que es; y se posicionarán arriba a la izqueirda que es su posición original y de inicio por defecto-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <p>.align-items-center</p>
+                <div class="contenedor d-flex align-items-center"> <!--Con align-item-center los elementos se alinean en el centro del contenedor padre de manera vertical-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <p>.align-items-end</p>
+                <div class="contenedor d-flex align-items-end"> <!--Con align-item-end los elementos se alinean hasta la parte final del elemento padre de manera vertical-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <p>.align-items-baseline</p>
+                <div class="contenedor d-flex align-items-baseline"> <!--Con align-item-baseline los elementos se alinean de acuerdo a la tipografía-->
+                    <div style="font-size: 28px;">Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <p>.align-items-stretch</p>
+                <div class="contenedor d-flex align-items-stretch"> <!--Con align-item-stretch los elementos abarquen el 100% del alto del contenedor padre-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Align Self-->
+        <div class="row">
+            <div class="col">
+                <h4>Align-Self</h4><!--Con Align Self movemos cada una de los elementos de manera individual y no todos juntos como con align-items-->
+                <hr>
+
+                <div class="contenedor d-flex ">
+                    <!--Para poder alinear cada uno de los elemntos ya no debemos ponerles las clases de como se van a comportar los elementos al elemento padre si no debemos colocarle las clases a los elementos hijos directamente-->
+                    <div class="align-self-start" style="font-size: 25px;">.align-self-start</div><!--Se alinea por defecto arriba de manera vertical del elemento padre-->
+                    <div class="align-self-center">.align-self-center</div><!--Se alinea al centro de manera vertical de nuestro elemento padre-->
+                    <div class="align-self-end">.align-self-end</div><!--Se posiciona hasta abajo de nuestro elemento padre de manera vertical-->
+                    <div class="align-self-baseline">.align-self-baseline</div><!--Se alinea con la tipografía (por eso le pusimos un font-size diferente al primer div)-->
+                    <div class="align-self-stretch">.align-self-stretch</div><!--Abarca la altura total de nuestro elemento padre-->
+                </div>
+            </div>
+        </div>
+
+        <!--Auto Margins-->
+        <div class="row">
+            <div class="col">
+                <h4>Auto Margings</h4>
+                <hr>
+
+                <div class="contenedor d-flex justify-content-end">
+                    <div class="mr-auto">.mr-auto</div><!--Con MR le decimos tenga un margen a la derecha automáticamente mr no significa margin aunque la m sí representa margin la r representa right-->
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <div class="contenedor d-flex justify-content-start">
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div class="ml-auto">.ml-auto</div><!--Con ML le decimos tenga un margen a la derecha automáticamente mr no significa margin aunque la m sí representa margin la l representa left-->
+                </div>
+
+                <div class="contenedor d-flex flex-column align-items-start justify-content-end" style="height:250px;">
+                    <div class="mb-auto">.mb-auto</div><!--Con mb le indicamos que queremos un margin bottom -->
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                </div>
+
+                <div class="contenedor d-flex flex-column align-items-end justify-content-end" style="height:250px;">
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div class="mt-auto">.mt-auto</div><!--Con mt le indicamos que queremos un margin top-->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
