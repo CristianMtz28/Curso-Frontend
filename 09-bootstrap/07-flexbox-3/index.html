@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>07- Flexbox 3 | Curso Frontend: Bootstrap</title>
+    <style>
+        .contenedor {
+            margin-bottom: 20px;
+            background-color: #e8e8e8;
+            color: #fff;
+            height: 200px;
+        }
+
+        .contenedor div {
+            background-color: #4f5ef5;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255, .25);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Contenedor-->
+    <div class="container">
+        
+        <!--Wrap-->
+        <div class="row mt-3"> 
+            <div class="col">
+                <h4>Wrap</h4>
+                <hr>
+
+                <p>.flex-nowrap</p>
+                <div class="contenedor d-flex flex-nowrap"> <!--Con flex-nowrap le indicamos al nuestras cajas que se acomoden de tal forma que quepan todas en la misma fila lo que ocacionará que se hagan cada vez más pequeñas y se vean como juntitas y amontonadas NOTA: POR DEFECTO BOOTSTRAP VIENE CON NOWRAP -->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+                <p>.flex-wrap</p>
+                <div class="contenedor d-flex flex-wrap"> <!--Con flex-wrap hacemos que las cajas se acomoden de manera horizontal respetando el espacio de cada una y si ya no cabe a diferencia de no-wrap que las ponía todas juntitas y amontonadas las pondrá debajo -->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+                <p>.flex-wrap-reverse</p>
+                <div class="contenedor d-flex flex-wrap-reverse"> <!--Con flex-wrap-reverse hacemos lo mismo que con flex-wrap pero al revés-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <h4>Order</h4>
+                <hr>
+
+                <div class="contenedor d-flex">
+                    <div class="order-3">Caja 1</div> <!--Los orders son para ordenar nuestras cajas como nosotros queramos y moverlas a nuestro antojo-->
+                    <div class="order-1">Caja 2</div>
+                    <div class="order-2">Caja 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-3"> 
+            <div class="col">
+                <h4>Align Content</h4>
+                <hr>
+
+                <p>.align-content-start</p>
+                <div class="contenedor d-flex flex-wrap align-content-start" style="height: 250px;"> <!--Align content nos permitirá alinear nuestros elementos de forma vertical; para poder usar esta clase debemos usar flex-wrap para que pueda funcionar-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+                <p>.align-content-center</p>
+                <div class="contenedor d-flex flex-wrap align-content-center" style="height: 250px;"> <!--Align content center nos permitirá alinear nuestros elementos de forma vertical pero dejando los elementos en medio, al centro de nuestro contenedor; para poder usar esta clase debemos usar flex-wrap para que pueda funcionar-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+                <p>.align-content-end</p>
+                <div class="contenedor d-flex flex-wrap align-content-end" style="height: 250px;"> <!--Align content end nos permitirá alinear nuestros elementos de forma vertical pero dejando los elementos hasta abajo, al fondo de nuestro contenedor; para poder usar esta clase debemos usar flex-wrap para que pueda funcionar-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+
+                <p>.align-content-between</p>
+                <div class="contenedor d-flex flex-wrap align-content-between" style="height: 250px;"> <!--Align content between nos permitirá alinear nuestros elementos de forma vertical pero dejando los elementos separados unos arriba y otros abajo ya que deja el espacio entre los dos (between) vacio; para poder usar esta clase debemos usar flex-wrap para que pueda funcionar-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+                <p>.align-content-around</p>
+                <div class="contenedor d-flex flex-wrap align-content-around" style="height: 250px;"> <!--Align content around nos permitirá alinear nuestros elementos de forma vertical pero dejando a los elementos scon un espacio al rededor de ellos, para poder usar esta clase debemos usar flex-wrap para que pueda funcionar-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+
+                <p>.align-content-stretch</p>
+                <div class="contenedor d-flex flex-wrap align-content-stretch" style="height: 250px;"> <!--Align content stretch nos permitirá alinear nuestros elementos de forma vertical pero dejando a los elementos con una altura que le permitirá abarcar todo el contenedor padre, para poder usar esta clase debemos usar flex-wrap para que pueda funcionar-->
+                    <div>Caja 1</div>
+                    <div>Caja 2</div>
+                    <div>Caja 3</div>
+                    <div>Caja 4</div>
+                    <div>Caja 5</div>
+                    <div>Caja 6</div>
+                    <div>Caja 7</div>
+                    <div>Caja 8</div>
+                    <div>Caja 9</div>
+                    <div>Caja 10</div>
+                    <div>Caja 11</div>
+                    <div>Caja 12</div>
+                    <div>Caja 13</div>
+                    <div>Caja 14</div>
+                    <div>Caja 15</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
