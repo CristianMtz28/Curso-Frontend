@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>08- Responsive Utilities | Curso Frontend: Bootstrap</title>
+</head>
+<body>
+
+    <!--Medidas de bootstrap
+        
+        .col       Extra Pequeño (Extra Small) - Smartphones Verticales    Menos de 544px de ancho
+        .col-sm    Pequeño (Small) - Smartphoones Verticales               Más de 544px y menos de 768px de ancho
+        .col-md    Mediano (Medium) - Tablets                              Más de 768px y menos de 992px de ancho
+        .col-lg    Largo (Large)  -Computadoras                            Más de 992px y menos de 1200px de ancho
+        .col-xl    Extra Largo (Extra Large) - Computadoras                Más de 1200px de ancho
+    
+    
+    
+    
+    -->
+    <div class="container">
+        <div class="row">
+            <!--Por defecto viene display:block; o d-block según boostrap, para utilizar el truco de mostrar y no mostrar en dispositivos móviles usaremos el famoso display:none; para mostrar dependiendo el tamaño del dispositivo con d-none-->
+            <div class="col columna d-block d-sm-none">XS - Extra Small</div>
+            <div class="col columna d-none d-sm-block d-md-none">SM - Small</div>
+            <div class="col columna d-none  d-md-block d-lg-none">MD - Medium</div>
+            <div class="col columna d-none d-lg-block d-xl-none">LG - Large</div>
+            <div class="col columna d-none d-xl-block">XL - Extra Large</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

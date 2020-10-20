@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>10- Imágenes | Curso Frontend: Bootstrap</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-12 columna">
+                <img class="float-left rounded img-thumbnail img-fluid" width="300" src="img/bg.jpg" alt="">
+                <img class="float-right rounded img-thumbnail img-fluid" width="300" src="img/bg2.jpg" alt="">
+                <!--Aunque boottsrap nos da varias opciones para poder editar nuestras imágenes lo mejor sería usar el código css a parte para modificar los valores de las imágenes, sin embargo, veremos las clases que bootstrap nos da por defecto para poder utilizar con las imágenes
+                
+                    rounded                -Nos da un pequeño redondeado a las imágenes
+                    img-thumbnail          -Nos pone nuestra imágen en un marco para especificar que es una thumbnail
+                    img-fluid              -Abarca el 100% del nacho de nuestra columna en este caso 12 columnas
+
+                    NOTA: AUNQUE BOOTSTRAP NOS PEMITE USAR FLOAT YA SEA RIGHT O LEFT LO RECOMENDABLE ES USAR FLEXBOX PARA TENER UNA MEJOR PÁCTICA
+                
+                -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <figure class="figure">
+                    <img class="img-fluid rounded img-thumbnail" src="img/bg3.jpg" alt="">
+                    <figcaption class="figure-caption">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae consequuntur sit earum omnis recusandae! Adipisci harum ducimus cupiditate laboriosam, similique repudiandae temporibus minus dolores voluptas nobis vitae itaque ab dignissimos aut, minima sint. Rem, distinctio placeat consequatur pariatur, illo natus nisi perspiciatis voluptatem modi tenetur suscipit veritatis corrupti fugit laudantium quos iure nemo molestias .</p>
+                        <button class="btn-primary">Leer Más..</button>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-6">
+                <figure class="figure">
+                    <img class="img-fluid rounded img-thumbnail" src="img/bg5.jpg" alt="">
+                    <figcaption class="figure-caption">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae consequuntur sit earum omnis recusandae! Adipisci harum ducimus cupiditate laboriosam, similique repudiandae temporibus minus dolores voluptas nobis vitae itaque ab dignissimos aut, minima sint. Rem, distinctio placeat consequatur pariatur, illo natus nisi perspiciatis voluptatem modi tenetur suscipit veritatis corrupti fugit laudantium quos iure nemo molestias .</p>
+                        <button class="btn-primary">Leer Más..</button>
+                    </figcaption>
+                </figure>
+
+                <!--FIGURE Y FIGURECAPTION NOS PERMITIRÁN HACER PEQUEÑOS THUMBS PARA BLOGS-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

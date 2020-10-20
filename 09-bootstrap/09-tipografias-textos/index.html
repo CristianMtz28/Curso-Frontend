@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>09- Tipografías & Textos | Curso Frontend: Bootstrap</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!--Por defecto bootstrap ya le pone estilos propios del framework a nuestroa tipografía, por ejemplo a los h's o encabezados; para poder modificarlos a nuestro antojo debemos usar un archivo css personalizado.
+                También tenemos la etiqueta small que nos pemite poner un texto más pequeño a lado de los títulos sin importancia semántica en SEO y la clase text-muted nos permite usar un tono más claro en el texto-->
+                <h1>Encabezado h1 <small class="text-muted">Texto secundario</small> </h1>
+                <h2>Encabezado h2 <small class="text-muted">Texto secundario</small> </h2>
+                <h3>Encabezado h3 <small class="text-muted">Texto secundario</small> </h3>
+                <h4>Encabezado h4 <small class="text-muted">Texto secundario</small> </h4>
+                <h5>Encabezado h5 <small class="text-muted">Texto secundario</small> </h5>
+                <h6>Encabezado h6 <small class="text-muted">Texto secundario</small> </h6>
+            </div>
+
+            <div class="col-12">
+                <!--Si queremos que un párrafo tenga los estilos de un encabezado sin tener que repetirlo para que este no choque con el SEO podemos ponerle la clase del encabezado o sea class="h1" o h2, h3, h4, etc-->
+                <hr>
+                <p class="h1">Párrafo con estilo de encabezado h1</p>
+                <p class="h2">Párrafo con estilo de encabezado h2</p>
+                <p class="h3">Párrafo con estilo de encabezado h3</p>
+                <p class="h4">Párrafo con estilo de encabezado h4</p>
+                <p class="h5">Párrafo con estilo de encabezado h5</p>
+                <p class="h6">Párrafo con estilo de encabezado h6</p>
+            </div>
+
+            <div class="col-12">
+                <hr>
+                <h1 class="display-1">Encabezado Display 1</h1>
+                <h2 class="display-2">Encabezado Display 2</h2>
+                <h3 class="display-3">Encabezado Display 3</h3>
+                <h4 class="display-4">Encabezado Display 4</h4>
+            </div>
+
+            <div class="col-12">
+                <hr>
+
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officiis impedit, ab officia cumque minima, animi praesentium quibusdam labore quia fugit. Libero, nesciunt quia. Necessitatibus laudantium rem consequuntur eos omnis? dolor sit amet consectetur adipisicing elit. Saepe officiis impedit, ab officia cumque minima, animi praesentium quibusdam labore quia fugit. Libero, nesciunt quia. Necessitatibus laudantium rem consequuntur eos omnis?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officiis impedit, ab officia cumque minima, animi praesentium quibusdam labore quia fugit. Libero, nesciunt quia. Necessitatibus laudantium rem consequuntur eos omnis? dolor sit amet consectetur adipisicing elit. Saepe officiis impedit, ab officia cumque minima, animi praesentium quibusdam labore quia fugit. Libero, nesciunt quia. Necessitatibus laudantium rem consequuntur eos omnis?</p>
+            </div>
+
+            <!--PARTE 2 DEL CURSO-->
+
+            <!--Por defecto Bootstrap le da estilos a los párrafos y a algunos elemntos como las negristas, los enlaces, etc así que veamos como actuan-->
+            <div class="col-12">
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> <!--Párrafo por defecto-->
+                <p><s>Lorem ipsum dolor sit amet consectetur adipisicing.</s></p> <!--subrayado en medio, como tachado-->
+                <p><u>Lorem ipsum dolor sit amet consectetur adipisicing.</u></p> <!--Subrayado abajo de las letras o sea el normal-->
+                <p><small>Lorem ipsum dolor sit amet consectetur adipisicing.</small></p> <!--Texto más pequeño-->
+                <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing.</strong></p> <!--Negritas-->
+                <p><em>Lorem ipsum dolor sit amet consectetur adipisicing.</em></p> <!--Italica o cursiva-->
+            </div>
+
+            <div class="col-4">
+                <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae consequuntur sit earum omnis recusandae! Adipisci harum ducimus cupiditate laboriosam, similique repudiandae temporibus minus dolores voluptas nobis vitae itaque ab dignissimos aut, minima sint. Rem, distinctio placeat consequatur pariatur, illo natus nisi perspiciatis voluptatem modi tenetur suscipit veritatis corrupti fugit laudantium quos iure nemo molestias sapiente saepe laboriosam temporibus voluptatum rerum repellat. Expedita tenetur fuga natus aliquid assumenda, cupiditate quas maiores voluptatem nam autem tempora eveniet minima sint doloremque, necessitatibus atque ipsa aperiam iste nulla neque rerum. Dolores beatae vero, ullam ducimus porro laborum eos consectetur architecto. Deleniti repellendus rerum mollitia.</p>
+            </div>
+
+            <div class="col-4">
+                <hr>
+                <p class="text-left">Texto alineado a la izquierda</p>
+                <p class="text-center">Texto alineado al centro</p>
+                <p class="text-right">Texto alineado a la derecha</p>
+            </div>
+
+            <div class="col-4">
+                <hr>
+                <p class="text-lowercase">Minúsculas</p>
+                <p class="text-uppercase">Mayúsculas</p>
+                <p class="text-capitalize">capital letters</p>
+            </div>
+
+            <div class="col-6">
+                <hr>
+                <blockquote class="blockquote">
+                    <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <span class="blockquote-footer"><p>Cristian Martínez</p></span>
+                </blockquote>
+            </div>
+            <div class="col-6">
+                <hr>
+                <blockquote class="blockquote text-right">
+                    <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <span class="blockquote-footer"><p>Cristian Martínez</p></span>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
