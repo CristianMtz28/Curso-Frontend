@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>08- Responsive Utilities | Curso Frontend: Bootstrap</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <form action="">
+                    <!--Todos los elementos del formulario deben ir dentro de la etiqueta form-group y de ahí empezar con los atrubutos que tenga cada elemento; pero todos los elementos deben tener la clase form-control a excepción de los que son de tipo radio que tenemos el ejemplo más abajito-->
+                    
+                    <!--Tex-->
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre" id="nombre">
+                    </div>
+
+                    <!--Password-->
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control" name="password" placeholder="Contraseña" id="password">
+                    </div>
+
+                    <!--Textarea-->
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" class="form-control" id="mensaje" ></textarea>
+                    </div>
+
+                    <!--Select-->
+                    <div class="form-group">
+                        <label for="pais">País</label>
+                        <select name="pais" id="pais" class="form-control">
+                            <option value="mexico">México</option>
+                            <option value="spain">España</option>
+                            <option value="colombia">Colombia</option>
+                        </select>
+                    </div>
+
+                    <label for="genero">Género</label>
+                    <!--Los checkbox en este la clase dentro de los input seria form-check-label y form-check-input para los input-->
+
+                    <!--Hombre-->
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre
+                            <!-- <input type="radio" name="sexo" id="mujer" class="form-check-input mr-2">Mujer -->
+                        </label>
+                        </select>
+                    </div>
+
+                    <!--Mujer-->
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <!-- <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre -->
+                            <input type="radio" name="sexo" id="mujer" class="form-check-input mr-2">Mujer
+                        </label>
+                        </select>
+                    </div>
+
+                    <!--Checkbox-->
+                    <div class="form-check mb-3">
+                        <label class="form-check-label">
+                            <!-- <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre -->
+                            <input type="checkbox" name="sexo" id="terminos" class="form-check-input mr-2">Acepto términos y condiciones
+                        </label>
+                        </select>
+                    </div>
+
+                    <!--Botón-->
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

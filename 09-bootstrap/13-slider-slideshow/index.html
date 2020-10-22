@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>13- Slider/Slideshow| Curso Frontend: Bootstrap</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3">
+            
+                <!--ESTRUCTIRA COMPLETA DEL SLIDE-->
+                <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+
+                <!--Indicadores que nos dice en que slide están NOTA: SÓLO NOS DICE EN DÓNDE ESTÁ, NO LE PUEDES PRESIONAR Y SE CAMBIA-->
+                <ol class="carousel-indicators">
+                    <li data-target="#principal-carousel" data-slid-to="0" class="active"></li>
+                    <li data-target="#principal-carousel" data-slid-to="1"></li>
+                    <li data-target="#principal-carousel" data-slid-to="2"></li>
+                </ol>
+
+                <!--Contenido del slideshow-->
+                    <div class="carousel-inner">
+                        <!--Imagen 1-->
+                        <div class="carousel-item active">
+                            <img src="img/carousel1.jpg" alt="">
+                        </div>
+                        <!--Imagen 2-->
+                        <div class="carousel-item">
+                            <img src="img/carousel2.jpg" alt="">
+                        </div>
+                        <!--Imagen 3-->
+                        <div class="carousel-item">
+                            <img src="img/carousel3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!--Indicadores de antes y después-->
+                    <a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+                <!--FIN DE LA ESTRUCTURA COMPLETA DEL SLIDE-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-3">
+                <!--ESTRUCTIRA COMPLETA DEL SLIDE CON TEXTO-->
+                <div class="carousel slide" id="secondary-carousel" data-ride="carousel">
+
+                    <!--Indicadores que nos dice en que slide están NOTA: SÓLO NOS DICE EN DÓNDE ESTÁ, NO LE PUEDES PRESIONAR Y SE CAMBIA-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#secondary-carousel" data-slid-to="0" class="active"></li>
+                        <li data-target="#secondary-carousel" data-slid-to="1"></li>
+                        <li data-target="#secondary-carousel" data-slid-to="2"></li>
+                    </ol>
+    
+                    <!--Contenido del slideshow-->
+                        <div class="carousel-inner">
+                            <!--Imagen 1-->
+                            <div class="carousel-item active">
+                                <div class="carousel-caption d-block">
+                                    <h4>Título de la imagen</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores commodi iste repudiandae ad! Delectus, officia!</p>
+                                </div>
+                                <img src="img/carousel1.jpg" alt="">
+                            </div>
+                            <!--Imagen 2-->
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-block">
+                                    <h4>Título de la imagen</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores commodi iste repudiandae ad! Delectus, officia!</p>
+                                </div>
+                                <img src="img/carousel2.jpg" alt="">
+                            </div>
+                            <!--Imagen 3-->
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-block">
+                                    <h4>Título de la imagen</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores commodi iste repudiandae ad! Delectus, officia!</p>
+                                </div>
+                                <img src="img/carousel3.jpg" alt="">
+                            </div>
+                        </div>
+    
+                        <!--Indicadores de antes y después-->
+                        <a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+    
+                        <a href="#secondary-carousel" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                </div>
+                <!--FIN DE LA ESTRUCTURA COMPLETA DEL SLIDE CON TEXTO-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
