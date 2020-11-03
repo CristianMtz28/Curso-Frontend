@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>20 - Ventanas Modales | Curso Frontend: Bootstrap</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col mb-3">
+                <!--MODAL SIMPLE-->
+                <!--Para crear un modal con bootstrap debemos asegurarnos que tenemos rnlazados nuestros archivos de Javascript ya que el modal funciona con este lenguaje.
+                Lo que también tenemos que crear es el botón de apertura y el modal-->
+
+                <button class="btn btn-primary" data-toggle="modal" data-target="#cm-modal">Manejo Fácil</button> <!--El botón puede ser un botón normal pero debe tener en el data toggle el valor de modal para indicarle que trabajaremos con este elemento y en el data-target vamos a crear nuestro id con el nombre que nosotros queramos en este caso cm-modal (de Cristian Martínez)-->
+
+                <div class="modal fade" id="cm-modal" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true"><!--Creamos un div con la clase modal-fade que nos pondrá la pantalla como gris junto con us id que es el que enlazaremos al botón; en este caso cm-modal ponemos el valor tabindex -1 que nos pide bootstar junto con el rol-dialog y el aria-hidden true y tampoco olivdemos el arialabelledby que también enlazaremos al botón indicando a dónde debe ir-->
+                    <div class="modal-dialog"> <!--Creamos otro div con la clase modal-dialog-->
+                        <div class="modal-content"> <!--Creamos otro div con la clase moda-content que es dónde pondremos el contenido de nuestro modal -->
+                            <div class="modal-header"> <!--Colocamos un modal-header-->
+                                <h5 class="modal-title">Sitio Web</h5>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar"> <!--Añadimos un botón para cerrar el modal-->
+                                    <span aria-hidden="true">&times;</span> <!--Agregamos el tache para cerrar-->
+                                </button>
+                            </div>
+                            <div class="modal-body"> <!--El contenido principal de nuestro modal-->
+                                <h2>Manejo Fácil</h2>
+                                <p>Sitio web creado con Wordpress para la obtención del leads que ayudan a nuestro cliente a generar más tráfico en su sitio web y por ende más alumnos dispuestos a aprender a manejar.</p>
+                                <a href="https://manejofacil.com" target="_blank">https://manejofacil.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--SEPARACIÓN DE MODALES-->
+
+
+
+
+                <!--MODAL CON LA   GRID-->
+
+                <button class="btn btn-success" data-toggle="modal" data-target="#alien-modal">Modal con la Grid de Bootstrap</button> 
+
+                <div class="modal fade" id="alien-modal" tabindex="-1" role="dialog" aria-labelledby="alien-modal" aria-hidden="true">
+                    <div class="modal-dialog"> 
+                        <div class="modal-content"> 
+                            <div class="modal-header"> 
+                                <h5 class="modal-title">Alien Web</h5>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar"> 
+                                    <span aria-hidden="true">&times;</span> 
+                                </button>
+                            </div>
+                            <div class="modal-body"> 
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam molestias ducimus quis. Voluptas ipsam adipisci consequuntur deserunt! Omnis odio nam blanditiis! Aspernatur architecto dicta amet placeat debitis nostrum fuga. Ad ipsa nesciunt ipsum eveniet sunt, corrupti facere minima laboriosam dolorum quibusdam voluptatibus! Ad deserunt consequuntur mollitia quod! Vel tempora repellendus sunt rem dolor nulla dolores!</p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam molestias ducimus quis. Voluptas ipsam adipisci consequuntur deserunt! Omnis odio nam blanditiis! Aspernatur architecto dicta amet placeat debitis nostrum fuga. Ad ipsa nesciunt ipsum eveniet sunt, corrupti facere minima laboriosam dolorum quibusdam voluptatibus! Ad deserunt consequuntur mollitia quod! Vel tempora repellendus sunt rem dolor nulla dolores!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

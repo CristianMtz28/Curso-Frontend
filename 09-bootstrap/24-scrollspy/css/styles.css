@@ -1,0 +1,20 @@
+body{
+    /*Estos 54px son lo que mide mi menú*/
+}
+
+.cm-nav a {
+    color: #fff;
+    padding: 15px;
+}
+
+.cm-nav a:hover, .cm-nav .active {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.seccion {
+    margin-bottom: 700px;
+}
+
+.seccion .columna {
+    padding-top: 100px;
+}

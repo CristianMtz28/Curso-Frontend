@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>10- Boostrap final | Curso Frontend: Bootstrap</title>
+</head>
+<body>
+
+
+    <!--Menú de navegación-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Cristian Martínez</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-sitio" aria-controls="menu-sitio" aria-expanded="false" aria-label="Mostrar/Ocultar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu-sitio">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Inicio</a>
+                        </li>
+    
+    
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                <a href="#" class="dropdown-item">Sumenú 1</a>
+                                <a href="#" class="dropdown-item">Sumenú 2</a>
+                                <a href="#" class="dropdown-item">Sumenú 3</a>
+                                <a href="#" class="dropdown-item">Sumenú 4</a>
+                            </div>
+                        </li>
+    
+    
+    
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+    
+                    <form action="" class="form-inline my-2 my-lg-0">
+                        <input type="text" class="form-control mr-sm-2" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-primary my-sm-0 my-2">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!--Slideshow-->
+        <div class="row">
+            <div class="col mt-3">
+            
+                <!--ESTRUCTIRA COMPLETA DEL SLIDE-->
+                <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+
+                <!--Indicadores que nos dice en que slide están NOTA: SÓLO NOS DICE EN DÓNDE ESTÁ, NO LE PUEDES PRESIONAR Y SE CAMBIA-->
+                <ol class="carousel-indicators">
+                    <li data-target="#principal-carousel" data-slid-to="0" class="active"></li>
+                    <li data-target="#principal-carousel" data-slid-to="1"></li>
+                    <li data-target="#principal-carousel" data-slid-to="2"></li>
+                </ol>
+
+                <!--Contenido del slideshow-->
+                    <div class="carousel-inner">
+                        <!--Imagen 1-->
+                        <div class="carousel-item active">
+                            <img src="img/s1.jpg" class="d-block w-100"  alt="">
+                        </div>
+                        <!--Imagen 2-->
+                        <div class="carousel-item">
+                            <img src="img/s2.jpg"  class="d-block w-100" alt="">
+                        </div>
+                        <!--Imagen 3-->
+                        <div class="carousel-item">
+                            <img src="img/s3.jpg" class="d-block w-100"  alt="">
+                        </div>
+                    </div>
+
+                    <!--Indicadores de antes y después-->
+                    <a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+                <!--FIN DE LA ESTRUCTURA COMPLETA DEL SLIDE-->
+            </div>
+        </div>
+
+        <!--Texto de Galería-->
+        <div class="row">
+            <div class="col-12">
+                <div class="py-4 border-bottom">
+                    <h2 class="text-center">Galería</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--Productos-->
+        <div class="row py-4">
+            <!--Producto 1-->
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">iPhone</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Producto 2-->
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">iPhone</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Producto 3-->
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">iPhone</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Producto 4-->
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/4.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">iPhone</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Productos-->
+        <div class="row py-4">
+            <!--Producto 5-->
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/5.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">iPhone</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Producto 6-->
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">iPhone</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Producto 7-->
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/7.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">iPhone</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Producto 8-->
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/8.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">iPhone</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <a href="" class="btn btn-sm btn-primary">Comprar</a>
+                        <a href="" class="btn btn-sm btn-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <footer class="container">
+            <div class="row border-top py-5">
+                <div class="col">
+                    <h3 class="lead">cristianm.dev</h3>
+                    <a href="#" class="btn btn-link">Acerca De</a>
+                    <a href="#" class="btn btn-link">Contacto</a>
+                </div>
+            </div>
+            <div class="col text-right">
+                <a href="#" class="btn btn-link">Subir en página</a>
+            </div>
+        </footer>
+    </div>
+    
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

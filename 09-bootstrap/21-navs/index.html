@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>21 - Navs | Curso Frontend: Bootstrap</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <h3>Menú con ul</h3>
+                <hr>
+
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 mt-3">
+                <h3>Menú con estilos css</h3>
+                <hr>
+
+                <ul class="cm-nav nav bg-dark">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-12 mt-4">
+                <h3>Menú con Nav</h3>
+                <hr>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Próximamente</a>
+                    <a href="#" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+
+            <!--Este es el menú que más se utiliza y ya no es con elementos li si no con la clase nav y dentro de ellos enlaces-->
+            <div class="col-12 mt-4">
+                <h3>Alineando el Menú</h3>
+                <hr>
+                <nav class="nav justify-content-end">
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Próximamente</a>
+                    <a href="#" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+
+            <div class="col-3 mt-4 mb-4">
+                <h3>Menú vertical</h3>
+                <hr>
+                <nav class="nav flex-column bg-dark cm-nav">
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Próximamente</a>
+                    <a href="#" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

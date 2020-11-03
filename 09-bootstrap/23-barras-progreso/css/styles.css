@@ -1,0 +1,27 @@
+.barra-progreso {
+    height: 25px;
+}
+
+.barra-progreso-hija {
+    width: 0%;
+}
+
+.barra-progreso-hija-2 {
+    width: 25%;
+    background-color: red;
+}
+
+.barra-progreso-hija-3 {
+    width: 50%;
+    background-color: orange;
+}
+
+.barra-progreso-hija-4 {
+    width: 100%;
+    background-color: green;
+}
+
+.barra-progreso-hija-5 {
+    width: 50%;
+
+}
