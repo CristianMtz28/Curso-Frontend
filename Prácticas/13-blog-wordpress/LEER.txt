@@ -1,0 +1,210 @@
+hPara crear un tema de wordpress basado en un diseño que hicimos de HTML y CSS debemos hacer lo siguiente:
+
+1.- En la carpeta de themes dentro de la carpeta wp-content en wordpress debemos crear una carpeta con el nombre de nuestro tema por ejemplo : "Dinamic Theme" (Es un ejemplo) obvio sin las comillas y dentro de esa carpeta debemos poner todos nuestros archivos de nuestro proyecto, los .html y las carpetas css y javascript, si usamos un procesados o framework como SASS o bootstrap no hay ningún problema, debemos pasar todos los archivos.
+
+2.- En el menú de apareiencias -> temas de Wordpress nos aparecerá que uno de nuestros temas esta dañado y aparecerá el nombre que previamente le hayamos dado; nos dirá que falta la hoja de estilos. Esta hoja de estilos que nos falta realmente no pondremos nuestros estilos pero pondremos una hoja de comentarios que pide wordpress que tiene la siguiente estructura:
+
+/*
+Theme Name: Dinamic Theme
+Theme URI: http://www.cristianm.dev
+Author: Cristian Martínez
+Author URI: http://www.cristianm.dev
+Description: Primer tema de Wordpress creado con HTML, CSS (SASS) y Bootstrap
+Version: 1.0
+*/
+
+Dentro de la hoja de estilos pondremos los "créditos" del tema NOTA: EL ARCHIVO CSS SE DEBE LLAMAR style.css
+
+3.- Ahora ya no nos aparecerá el mensaje que falta la hoja de estilos; nos dirá que:
+
+La plantilla no está disponible. Los temas necesitan un archivo de plantilla index.php. Los Temas hijo necesitan una cabecera de plantilla en la hoja de estilos style.css
+
+Ahora crearemos en nuestra carpeta un archivo llamado index.php y así sin que le pongamos nada a ese archivo ya no nos aparecerá el error y veremos nuestro tema con los demás sin imagen. Para poner la imagen es importante que la imagen se llame screenshot.jpg y debe medir 600*450; esta imagen debe ir a lado de los archivos index.php y style.css en la raíz del proyecto.
+
+¡Listo! Ahora podremos activar nuestro tema... y ya jajaja se verá todo blanco porque el archivo index.php esta vació, pero ya podemos activar el tema.
+
+4.- Volvamos nuestro index.html a index.php para eso copiaremos todo el código de nuestro index.html y lo pegaremos en el archivo index.php si guardamos y actualizamos veremos que nuestro sitio ya no es una hoja en blanco pero sí una estructura html sin código css; esto pasa porque no encuentra las rutas, pero vamos bien y tranquilos. Por el momento podemos borrar el index.html sin miedo alguno. Iremos trabajando con cada una de las partes que son:
+
+    *single.php (para las entradas)
+    *404.php (para las páginas de error)
+    *footer.php (el footer del sitio)
+    *header.php (la cabezera)
+    *page.php (para las páginas de nuestro sitio)
+    *functions.php (para las funciones que tendrá el tema)
+    *sidebar.php (para el aside de nuestro sitio en wordpress)
+
+Así es como dividiremos nuestro código para volverlos fragmentos .php y que wordpress pueda trabajar con ellos.
+
+5.- Trabajando con el header. Ahora cortaremos el código desde el fin del </header> de nuestro index hasta la parte de arriba el DOCTYPE y lo colocaremos en el archivo de header.php ya que ese será nuestro archvivo de cabecera y la cabecera es igual en todas nuestras páginas así a la hora de tener un cambio sólo se mueve un archivo en vez de todos. Así mismo lo haremos con el footer y el aside
+
+Si nosotros guardamos y actualizamos en el index.php o sea en el index de nuestra página no se mostrará el header ni el footer y eso no es lo que queremos; lo que queremos es que este ahí, para eso lo llamaremos con las siguientes funciones php
+
+<?php get_header(); ?>   = Esta función llama al archivo de header.php y lo coloca directamente el código que tenga; obvio debemos poner esa función hasta arriba de nuestro archivo index.php
+<?php get_sidebar(); ?>   = Esta función irá en la parte dónde iba el aside 
+<?php get_footer(); ?>   = Hace lo mismo pero con el footer y va hasta abajo.
+
+Y así ya estamos haciendo nuestro llamado php.
+
+6.- Vamos a darle estilos a nuestro blog pero ¿Cómo le hacemos para que cargué? Recuerda que no encuentra las rutas de css; para eso nos iremos al header.php y editaremos los enlaces con la siguiente función:
+
+<?php bloginfo('template_url'); ?>/      
+
+Esta función con todo y la última diagonal a la derecha debemos incluirla dentro de nuestro header en dónde va nuestro href de los esttilos pero ¿Qué significa esta función? Básicamente nos indica que buscará la url de nuestro template dentro de nuestros archivos de wordpress y buscará los estilos que le estemos enlazando; por ejemplo: 
+
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/ css/bootstrap.min.css">
+
+Y así con todos los archivos que tengamos enlazados como las imágenes, estilos propios y de bootstrap
+
+Para la parte de las imágenes es lo mismo pero en el header no irán tantas imágenes; sería sólo el logo del sitio y para que cuando le des click al logo te lleve al home; debes poner la siguiente función
+
+<?php bloginfo('url'); ?>/      Es parecida a la otra pero sin el template_ y sólo nos manda a la url del sitio.
+
+Si queremos cambiar el nombre del título de nuestra página por la que le pongamos desde el administrador de wordpress debemos poner esta función en nuestra etiqueta <title> </title>
+
+<title>
+    <?php if(is_home()){
+        echo get_bloginfo('name');
+    } else if (is_single()) {
+        echo the_title();
+    } else {
+        echo get_bloginfo('name');
+    }?>
+</title>    
+
+Donde es un simple if y valida si el usuario esta en la página de home nos mostrará el nombre del blog, si esta en otra página, post o entrada, nos traerá el título que le hayamos puesta, en caso de estar en otro lado nos volverá a traer el título del blog.
+
+Ya para finalizar este punto debemos colocar las funciones <?php wp_head(); ?> y <?php wp_footer(); ?> respectivamente en sus archivos .php el <?php wp_head(); ?> va debajo del title, dentro de la etiqueta <heade> y antes del <body> y la función <?php wp_footer(); ?> va justo antes de la etiqueta </body> esto es para que a la hora de iniciar sesión en wordpress nos aparezca la barra negra de wordpress de administrador y plugins como los de analytics puedan trabajar.
+
+
+7.- Loop de Wordpress. El loop de wordpress es lo que nos permite traer las entradas y que se muestren en el sitio.  Para eso colocaremos condicionales dentro de nuestro artículo; para este punto sólo trabajaremos con un artículo podemos eliminar los sobrantes que tenemos ya que con el loop de wordpress estos se llenarán sólos; y las condicionales son:
+
+<section class="row posts">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> LOOP DE WORDPRESS
+    <article class="col-sm-6 post">
+        <div class="contenedor">
+            <div class="thumb">
+                <a href="<?php the_permalink();?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'homepage-thumb' ); } ?></a>  IMAGEN DE NUESTRO POST
+            </div>
+            <div class="info">
+                <h2 class="titulo"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>  TÍTULO DE NUESTRO POST CON EL PERMALINK PARA IR AL POST
+                <p class="fecha"><?php echo get_the_date(); ?></p>     OBTENEMOS LA FECHA EN LA QUE FUE CREADA
+
+                <div class="extracto"><?php the_excerpt(); ?></div>    OBTENEMOS EL EXTRACTO DE NUESTRO POST
+                <!-- <p class="extracto"><?php the_excerpt(); ?></p> -->  COMENTAMOS ESTE P PARA QUE TRABAJE DENTRO DE UN DIV CON LA MISMA CLASE
+                <div class="categorias">
+                    <?php the_category();?>   OBTENEMOS LA CATEGORÍA
+                </div>
+            </div>
+        </div>
+    </article>
+
+    ESTE SERÍA LO QUE APARECE SI EL USUARIO LLEGA A UN ARTÍCULO QUE NO EXISTE
+    <?php endwhile; else: ?>
+        <article class="col-sm-6 post">
+            <div class="contenedor">
+                <div class="info">
+                    <h2 class="titulo">El Post que buscas no existe</h2>
+                    <div class="extracto"><p>Revisa que la URL que hayas ingresado sea correcta</p></div>
+                </div>
+            </div>
+        </article>
+    <?php endif; ?>
+</section>
+
+Esta es la modificación del section de nuestro .html a .php
+
+
+8.- AGREGANDO IMÁGENES A NUESTROS POST. Esto va a ir en nuestro archivo de functions.php
+
+<?php
+
+add_theme_support('post-thumbnails');   //AÑADIMOS EL SOPORTE PARA LAS IMÁGENES
+
+add_image_size('home-thumb', 745, 372, true);  //INDICAMOS EL TAMAÑO DE LA IMAGEN EN ESTE CASO SON DE 745*372 PERO SI QUEREMOS UNA CUADRADA PODRÍAMOS PONERLA DE 600*600 COMO UN EJEMPLO
+
+?>
+
+
+9.- AGREGANDO LA PAGINACIÓN
+
+Para agregar la páginación de los post debemos utilizar un plugin llamado WP-PageNavi que se encarga de hacer la págunación por nosotros; eso sí; utilizando los estilos css que nosotros hayamos establecidos; por ejempplo pasamos de una simple navegación de html y css así: 
+
+        <section class="row paginacion">
+            <div class="col-md-12">
+                <ul>
+                    <li class="disabled">Página 1 de 6</li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">Ultima »</a></li>
+                </ul>
+            </div>
+        </section>
+
+A una así: 
+
+        <section class="row paginacion">
+            <div class="col-md-12">
+                <div class="pagination">
+                    <?php wp_pagenavi(); ?>
+                </div>
+            </div>
+        </section>
+
+Con la función <?php wp_pagenavi(); ?> hacemos la páginación de manera automática.
+
+
+10.- CREANDO EL SINGLE  Para crear el single es igual que el index, vamos a ir llamando las funciones y acomodando el css conforme nos convenga para que quede; una vez que nosotros hayamos creado el single.php ese será la plantilla para las entradas del post de nuestro wordpress
+
+11.- MENU DE WORDPRESS
+
+Para poder agregar un menú desde wordpress en el apartado de apareiencia -> menú debemos irnos al archivo de functions.php y agregar la siguiente función con un arreglo:
+
+/*Creando un menú*/
+
+register_nav_menus(array(
+    'menu-top' => 'Menu Prinicipal',
+    'menu-footer' => 'Menu Footer'
+));
+
+Ahora en nuestro header.php debemos llamar a nuestro menú con php
+
+Para eso en nuestro nav debemos colocar algo como esto:
+
+<nav class="menu">
+			<div class="container">
+				<div class="row">
+					<!--<ul class="col-md-12">-->
+					<!--	<li><a href="#">HTML</a></li>-->
+					<!--	<li><a href="#">CSS</a></li>-->
+					<!--	<li><a href="#">Javascript</a></li>-->
+					<!--	<li><a href="#">Jquery</a></li>-->
+					<!--	<li><a href="#">Photoshop</a></li>-->
+					<!--	<li><a href="#">Git</a></li>-->
+					<!--</ul>-->                                    TODO ESTO ESTA COMENTADO
+
+
+
+					<?php wp_nav_menu(array(        EMPEZAMOS NUESTRO CÓDIGO PHP CON LA FUNCIÓN wp_nav_menu Y DENTRO IRÁ UN ARRAY CON OBJETOS; LOS OBJETOS SON 
+					    'container' => false,       CONTAINER: QUE NOS ÍNDICA SI LO QUEREMOS PONER EN UNA ETIQUETA; NOSOTROS LE PONEMOS QUE NO PORQUE YA ESTA LA FUNCIÓN DENTRO DE LA ETIQUETA QUE QUEREMOS
+					    'menu_class' => '',         MENU_CLASS:  QUE NOS DICE SI QUEREMOS PONER UNA CLASE PARA LOS ARCHIVOS CSS; AQUÍ PUDIMOS PONER col-med-12 TAMBIÉN PERO ESO LO HAREMOS EN EL SIGUIENTE PUNTO
+					    'items_wrap' => '<ul class="col-md-12">%3$s</ul>',      CON ITEM WRAP ENCERRAMOS NUESTRO MENI EN UN UL Y POR DEFECTO LO QUE ESTE DENNTRO SE VUELVE UN LI Y AHÍ ESTABLECEMOS LA CLASE; IMPORTANTE PONER EL %3s PARA QUE CARGUE NUESTR CONTENIDO
+					    'theme_location' => 'menu-top'   LE INDICAMOS COMO QUEREMOS QUE SE VEA EN EL APARTADO DE MENUS DE WORDPRESS, AQUÍ ENLAZAMOS LA FUNCIÓN QUE TENEMOS EN functions.php
+					  )); ?>
+				</div>
+			</div>
+		</nav>
+
+Para el footer es lo mismo y para todos los menús que querramos hacer, podemos hacer menús de diferentes niveles pero para eso; debemos modificar el código CSS 
+
+
+13.- PARA PODER CREAR PÁGINAS DEBEMOS EDITAR EL page.php y sería igual que el single.php si tenemos otra estructura sería lo mismo que el index y el single, ir modificando las funciones dentro de las etiquetas html para que funcione y se vea correctamente
+
+14.- ERROR 404 (No encuentra la url solicitada)
+
+Debemos utilizar el 404.php
+
+Y utilizar una página
