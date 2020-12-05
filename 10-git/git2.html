@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisando historial</title>
+</head>
+<body>
+    <h1>Historial</h1>
+    <p>Revisando cambios en el historial de git</p>
+    <p>Para empezar veremos el comando:</p>
+    <p><b>git log</b></p>
+    <p>git log nos permitirá traer todos los commits que hemos hecho</p>
+    <p>Para ver un poco más a detalle qué archivos se modificaron y cuánas "inserciones" o líneas de código se modificaron usamos el comando:</p>
+    <p><b>git log --stat</b></p>
+    <p>Que nos muestra algo así como las estádisticas de los cambios</p>
+    <p>Cuando cambiamos nuestro código y añadimos y borramos una línea de código o más nos aparece algo así:</p>
+    <p>
+        <b>git2.html | 2 +-
+        1 file changed, 1 insertion(+), 1 deletion(-)</b>
+    </p>
+
+    <p>Para ver las diferencias en consola entre el commit pasado y la versión que tenemos ahora usamos el comando:</p>
+
+    <p><b>git diff</b></p>
+
+    <p>Para ver nuestros commits en una sola línea sin tanta información y sólo el mensaje usamos el comando:</p>
+
+    <p><b>git log --oneline</b></p>
+
+    <p><b>PARA REGRESAR A UNA VERSIÓN ANTERIOR USAMOS git checkout #### y el número de identificador; podemos regresar a él, pero si regresamos YA NO EXISTIRÁN LAS VERSIONES POSTERIORES ENTONCES DEBEMOS TENER MUCHÍSIMO CUIDADO</b></p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+</head>
+<body>
+    <h1>Repositorios</h1>
+    <p>Los Repositoriosde Git son como se le conoce a los proyectos; para poder iniciar un repositorio debemos tener nuestra cuenta con github e iniciar con el comando:</p>
+    <p><b>git init</b></p>
+    <p>Este comando nos permite crear un nuevo repositorio vacio. Y si nosotros le damos en windows a "mostrar todos los archivos" veríamos una carpeta llamada .git que es toda la configuración</p>
+
+    <p>Para ver el status de nuestro repositorio usamos el comando:</p>
+
+    <p><b>git status</b></p>
+
+    <p>Cuando nosotros hagamos git status nos mostrará los commit que hayamos hecho previamente, los commits son las versiones que nosotros tenemos de nuestro proyecto; <b>se recomienda hacer commits cada vez que nosotros movamos el código</b> no importa que hagamos muchos commit eso es lo más normal</p>
+
+    <p>Ahora veremos el término del <b>steign index</b>. El steign index es una fase que nosotros tenemos antes de enviar nuestros archivos a una nueva versión. Esto se puede ver reflejado cuando ponemos gits status y nuestros archivos se ven en rojo; los que se hayan modificado, eso significa que aún no están en el staign index y si hacemos commit no revisará ni modificará ningún archivo; la misma terminal nos indica que debemos añadir (add) esos archivos. Para eso usamos el siguiente comando:</p>
+
+    <p><b>git add .</b> = Con git add . mandamos al staign index a todos los archivos de nuestro repositorio</p>
+    <p><b>git add index.html</b> Sin el punto y específicando el archivo que queremos enviar al staign index sólo asignamos un archivo</p>
+
+    <p>Después volvemos a poner <b>git status</b></p>
+
+    <p>Lo cuál veremos nuestros archivos en verde y ya no en rojo, eso significa que nuestros archivos están en el staign index y están listos para crear una nueva versión de nuestro proyecto en nuestro repositorio</p>
+
+    <p>Después de eso pondremos el comando:</p>
+
+    <p><b>git commit -m "Mensaje de menos de 50 caracteres que sea descriptivo"</b></p>
+
+    <p>Este comando lo que hará es que guardará nuestro commit con el mensaje que específicamos con el <i>-m</i> y debe ser lo más descriptivo y acertado posible para saber que pasó la última vez que hicimos commit en nuestro repositorio</p>
+
+    <p>Pero que pasa si no queremos commitear un archivo de todos los que se subieron, supongamos que no queresmo commitear el styles.css entonces podemos usar el comando:</p>
+
+    <p><b>git rm --cached styles.css</b></p>
+
+    <p>Aquí usamos el <i>rm --cached</i> y el nombre del archivo que queremos remover del staign index.</p>
+
+    <p>Para corroborarlo usamos nuevamente el comando git status y pasará de verde a rojo</p>
+
+    <p>Por ultimo podemos <b>y super recomendado</b> podemos crear un archivo llamado:</p>
+
+    <p><b> .gitignore</b></p>
+
+    <p>En este archivo indicaremos que archivos no queremos que se vayan al staign index por default, por ejemplo archivos .pdf, .psd, .zip, o archivos concretos que nosotros querramos como no sé, un contatco.html etc para que a la hora de hacer git status no los prepare para ir al staign index</p>
+    
+</body>
+</html>
